@@ -1,0 +1,190 @@
+[
+{
+	"uri": "https://opencoding.de/data-science/01_erste_schritte/",
+	"title": "Erste Schritte",
+	"tags": [],
+	"description": "",
+	"content": "In diesem Tutorial werden dir erste Schritte in den Bereich Data-Science gezeigt.\nWir wird gezeigt, wie du Daten in Listen darstellst und wie du diese mit der Bibliothek matplotlib grafisch anzeigst.\n"
+},
+{
+	"uri": "https://opencoding.de/python-mit-pygame/01_erste_schritte/",
+	"title": "Erste Schritte",
+	"tags": [],
+	"description": "",
+	"content": " Installation Thonny Installiere über Tools -\u0026gt; Manage Packages die Bibliothek pygame\nErste Schritte Folgender Code erstellt ein Fenster, dass sofort wieder verschwindet:\nimport pygame pygame.init() screen = pygame.display.set_mode((200,100))  Die Mainloop Nun brauchst du eine Mainloop. Ergänze dazu folgenden Code:\nrunning = True while running: for event in pygame.event.get(): if event.type == pygame.QUIT: running = False  Bilder zeichnen Zeichne etwas auf den Bildschirm.\nDazu brauchst du 3 Zeilen Code:\nimage = pygame.image.load(\u0026quot;[Dateiname].png\u0026quot;)  Diese Zeile lädt das Bild. Achtung: Das Bild muss im selben Verzeichnis wie dein Programm liegen und du musst den Dateinamen entsprechend setzen\nscreen.blit(image, (50,50))  Diese Zeile blittet das Bild an die Position (50|50) (beachte, dass der Ursprung beim Bildschirm in der oberen Ecke sitzt)\npygame.display.flip()  Diese Zeile sorgt dafür, dass das Display neu geladen wird. Gegebenfalls musst du dein Bild noch skalieren. Dies geht über folgenden Befehl:\nimage = pygame.transform.scale(image, (20, 20))  So könnte dein Programm aussehen:\nimport pygame pygame.init() screen = pygame.display.set_mode((200,100)) running = True image = pygame.image.load(\u0026quot;smiley.jpg\u0026quot;) image = pygame.transform.scale(image, (20, 20)) screen.blit(image, (50,50)) while running: for event in pygame.event.get(): if event.type == pygame.QUIT: running = False pygame.display.flip()  Transparente Farben Manchmal möchte man, dass eine Farbe transparent gezeichnet wird. Dies geht mit:\nimage.set_colorkey((255,255,255)) # Die Farbe weiß soll transparent sein.  ===== Hintergründe =====\nDen Hintergrund des Bildschirms kannst du folgendermaßen setzen\nscreen.fill((r,g,b))  r,g,b sind jeweils Zahlen zwischen 0 und 256 und die Anteile von red, green und blue in der Farbe. Hier findest du einen Farbwähler: https://www.rapidtables.com/web/color/RGB_Color.html\nDu kannst auch ein Bild als Hintergrund wählen:\nscreen.blit(bgd_image, (0,0))  ===== Bewegungen =====\nBewegungen kannst du hinzufügen, wenn du die festen Koordinaten, an die du ein Bild geblittet hast, variabel machst:\nx = 10 y = 10 stepx = 1 stepy = 1 while running: screen.blit(image, (x, y)) x = x+stepx  Wie du siehst entstehen zwei Probleme:\n Dein Bild hinterlässt eine Spur Dein Bild verschwindet aus dem Bildschirm.  Problem 1. lässt sich lösen, indem man zu Beginn der Mainloop immer erstmal den kompletten Bildschirm löscht:\nwhile running: screen.fill((20, 20, 20)) screen.blit(image, (x, y)) ...  Problem 2 lässt sich lösen, in dem man testet, ob das Bild außerhalb des Sichtbereiches ist.\n if x\u0026gt; screen.get_width() or x\u0026lt;0: stepx = stepx * (-1) x = x+ stepx  Hier findest du ein umfangreicheres Tutorial: https://dr0id.bitbucket.io/legacy/pygame_tutorials.html\n"
+},
+{
+	"uri": "https://opencoding.de/python_textadventures/01_first_steps/",
+	"title": "Erste Schritte (Entscheidungen if-then-else)",
+	"tags": [],
+	"description": "",
+	"content": " 1. Die Mainloop Schreibe folgenden Code:\nzustand = \u0026quot;Eingang\u0026quot; while zustand!= \u0026quot;Ende\u0026quot;: pass  Damit hast du eine Endlosschleife und das Grundgerüst für dein späteres Textadventure. Innerhalb dieser Endlosschleife kannst du jetzt Aktionen abfragen.\nDu kannst dein Programm in Thonny mit dem Stop-Icon beenden, sonst läuft es ewig weiter:\n2. Entscheidungen Jetzt wird eine Entscheidung ergänzt:\nwhile zustand != \u0026quot;Ende\u0026quot;: print(\u0026quot;Du stehst an folgendem Ort: \u0026quot; + zustand) entscheidung = input(\u0026quot;In welche Richtung gehst du?\u0026quot;) if zustand == \u0026quot;Eingang\u0026quot;: if entscheidung == \u0026quot;links\u0026quot;: zustand = \u0026quot;Seiteneingang links\u0026quot; elif entscheidung == \u0026quot;rechts\u0026quot;: zustand = \u0026quot;Seiteneingang rechts\u0026quot; if zustand == \u0026quot;Seiteneingang links\u0026quot;: ...  3. Das Programm beenden Spätestens jetzt macht es auch Sinn, dem Benutzer eine Möglichkeit zu geben, das Programm zu beenden:\nimport easygui zustand = \u0026quot;Eingang\u0026quot; while zustand != \u0026quot;Ende\u0026quot;: print(\u0026quot;Du stehst an folgendem Ort: \u0026quot; + zustand) entscheidung = input(\u0026quot;In welche Richtung gehst du?\u0026quot;) if zustand == \u0026quot;Eingang\u0026quot;: if entscheidung == \u0026quot;links\u0026quot;: zustand = \u0026quot;Seiteneingang links\u0026quot; elif entscheidung == \u0026quot;rechts\u0026quot;: zustand = \u0026quot;Seiteneingang rechts\u0026quot; elif entscheidung == \u0026quot;ende\u0026quot;: zustand = \u0026quot;Ende\u0026quot;  Geändert wurde folgender Teil:\nelif entscheidung == \u0026quot;ende\u0026quot;: zustand = \u0026quot;Ende\u0026quot;  Der Benutzer kann jetzt auch immer die Option ende eingeben. Am Ende wird in den letzten Zeilen überprüft, ob die Entscheidung des Benutzers \u0026ldquo;ende\u0026rdquo; war. Wenn ja, wird das Programm beendet.\nBeachte, dass du die Funktion zum Beenden an jedem möglichen Ort an dem sich der Spieler aufhalten kann, hinzufügen musst.\n"
+},
+{
+	"uri": "https://opencoding.de/impressum/",
+	"title": "Impressum",
+	"tags": [],
+	"description": "",
+	"content": "Andreas Siebel\nUsinger Straße 1\n61273 Wehrheim\nKontakt:\nE-Mail: a.siebel@cws-usingen.de\n"
+},
+{
+	"uri": "https://opencoding.de/python_mit_turtle/basics/",
+	"title": "Python Basics",
+	"tags": [],
+	"description": "",
+	"content": " Grundlagen Operationen    Befehl Beschreibung     turtle.forward() Gehe vorwärts   turtle.backward() Gehe rückwärts   turtle.right(x) Drehe dich um x Grad nach rechts   turtle.left(x) Drehe dich um x Grad nach links   turtle.penup() Hebe den Stift an (Bewege dich weiter, ohne zu zeichnen)   turtle.pendown() Setzt den Stift wieder ab, so dass du weiterzeichnest   turtle.fillcolor(\u0026ldquo;brown\u0026rdquo;) Ändert die Füllfarbe auf Braun   turtle.pencolor(\u0026ldquo;red\u0026rdquo;) Ändert die Stiftfarbe auf rot   turtle.begin_fill() Beginnt die Figur zu füllen   turtle.end_fill() Beendet das Füllen    Aufgabe 1.1: Python installieren Installiere Thonny auf deinem Rechner-. Manchmal kann Thonny auf den Rechnern ohne vollen Zugriff nicht installiert werden, da der Installationsdialog kein Verzeichnis anbietet. Entpacke dir in diesem Fall diese Datei in einen Ordner auf deinem USB Stick: {{ ::thonny.zip |}}\nWenn gar nichts geht: Gehe auf https://trinket.io/python3 um eine Online-IDE zu starten. Achtung: Damit sich hier das Fenster nicht automatisch direkt nach Ausführung schließt, musst du immer die letzte Zeile ergänzen: turtle.mainloop()\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle turtle.screensize(canvwidth=600, canvheight=200, bg=None) turtle.forward(100) turtle.right(100) turtle.forward(100) turtle.right(100) turtle.mainloop()  \nAufgabe 1.2: Zeichne ein Quadrat mit roter Stiftfarbe Zeichne ein Quadrat mit roter Stiftfarbe wie im folgenden Beispiel:\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle turtle.fillcolor(“Brown”) turtle.begin_fill() turtle.pencolor(“Red”) turtle.forward (100) turtle.right (90) turtle.forward (100) turtle.right (90) turtle.forward (100) turtle.right (90) turtle.forward (100) turtle.end_fill()  \nAufgabe 1.3: Zeichne ein Quadrat (2) Zeichne ein Quadrat mit den Seitenlängen 180 mit einer lila (\u0026ldquo;purple\u0026rdquo;) Linie und blauer (\u0026ldquo;blue) Füllungimport turtle\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle turtle.pencolor(\u0026quot;purple\u0026quot;) turtle.fillcolor(\u0026quot;blue\u0026quot;) turtle.begin_fill() turtle.forward (180) turtle.right (90) turtle.forward (180) turtle.right (90) turtle.forward (180) turtle.right (90) turtle.forward (180) turtle.end_fill()  \nAufgabe 1.4: Zeichne ein Rechteck Zeichne ein Rechteck:\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle turtle.forward (150) turtle.right (90) turtle.forward (80) turtle.right (90) turtle.forward (150) turtle.right (90) turtle.forward (80)  \nAufgabe 1.5: Zeichne zwei Rechtecke Ergänze Aufgabe 4 um ein zweites Rechteck, dass angezeigt werden soll. Die Rechtecke sollen sich nicht berühren. Verwende dafür pen up \u0026amp; pen down.\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle # Erstes Rechteck turtle.forward (150) turtle.right (90) turtle.forward (80) turtle.right (90) turtle.forward (150) turtle.right (90) turtle.forward (80) # Stift anheben und weiterbewegen turtle.penup() turtle.forward(20) turtle.pendown() # Zweites Rechteck turtle.forward (80) turtle.right (90) turtle.forward (150) turtle.right (90) turtle.forward (80) turtle.right (90) turtle.forward (150)  \nAufgabe 1.6: Zeichne ein Dreieck Zeichne ein Dreieck\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle import turtle turtle.forward (150) turtle.right (120) turtle.forward (150) turtle.right (120) turtle.forward (150) turtle.right (120)  \nAufgabe 1.7: Zeichne Figuren Zeichne mindestens zwei der folgenden Figuren:\n Regelmäßiges Fünfeck Regelmäßíges Sechseck Regelmäßiges Achteck Regelmäßiges Zwölfeck  "
+},
+{
+	"uri": "https://opencoding.de/python_mit_turtle/",
+	"title": "Python mit Turtlegrafik",
+	"tags": [],
+	"description": "",
+	"content": " Python mit Turtlegrafik In diesem Tutorial lernst du, wie du mit Hilfe von Turtle-Grafik mit Python Algorithmen erstellen kannst.\n"
+},
+{
+	"uri": "https://opencoding.de/python-mit-pygame/02_mainloop/",
+	"title": "Die Mainloop",
+	"tags": [],
+	"description": "",
+	"content": "Nun brauchst du eine Mainloop, d.h. eine Schleife die ständig läuft, bis die Zustandsvariable running den Wert False annimmt (z.B. wenn der Benutzer auf das x-Symbol des Fensters klickt.)\nErgänze dazu folgenden Code:\nrunning = True while running: for event in pygame.event.get(): if event.type == pygame.QUIT: running = False  "
+},
+{
+	"uri": "https://opencoding.de/python_textadventures/02_easygui/",
+	"title": "Easygui",
+	"tags": [],
+	"description": "",
+	"content": " Eine grafische Benutzeroberfläche Installation Thonny: Installiere zunächst das Package Easy-Gui\n Wähle dazu in Thonny das Menü: \u0026ldquo;Tools\u0026rdquo; -\u0026gt; \u0026ldquo;Manage Packages\u0026rdquo;\n Suche nach EasyGui und klicke auf install.\n  repl.it In repl.it werden Pakete automatisch installiert, wenn du sie mit der import-Anweisung importierst.\nErste Schritte Jetzt kannst du folgendermaßen EasyGui Dialoge einbinden.\nimport easygui zustand = \u0026quot;Eingang\u0026quot; while zustand != \u0026quot;Ende\u0026quot;: easygui.msgbox(\u0026quot;Du stehst an folgendem Ort: \u0026quot; + zustand, \u0026quot;Mein Textadventure\u0026quot;) entscheidung = easygui.buttonbox(\u0026quot;Wohin gehst du\u0026quot;, \u0026quot;Mein Textadventure\u0026quot;, [\u0026quot;links\u0026quot;, \u0026quot;rechts\u0026quot;]) if zustand == \u0026quot;Eingang\u0026quot;: if entscheidung == \u0026quot;links\u0026quot;: zustand = \u0026quot;Seiteneingang links\u0026quot; elif entscheidung == \u0026quot;rechts\u0026quot;: zustand = \u0026quot;Seiteneingang rechts\u0026quot; elif entscheidung == \u0026quot;ende\u0026quot;: zustand = \u0026quot;Ende\u0026quot;  In den Zeilen 4 und 5 wurden jeweils die Dialoge durch Gui Elemente ersetzt.\n"
+},
+{
+	"uri": "https://opencoding.de/data-science/02_listen/",
+	"title": "Listen",
+	"tags": [],
+	"description": "",
+	"content": "Oft will man mehrere Daten in Folge speichern, z.B. die Temperaturdaten eines Monats. Dann ist es aber unpraktisch, für jede Information eine eigene Variable einzuführen.\nOhne Listen müsstest du jeden Wert in einer einzelnen Variable speichern:\nd1 = 14.2 d2 = 13.2 d3 = 15.2 ...  Mit Listen geht dies in Kurzform:\nlist = [14.2, 13.2, 15.2, ... ]  "
+},
+{
+	"uri": "https://opencoding.de/python_textadventures/",
+	"title": "Python - Textadventures",
+	"tags": [],
+	"description": "",
+	"content": " Python Textadventures In diesem Tutorial lernst du, wie du mit Python einfache Textadventures erstellen kannst.\n"
+},
+{
+	"uri": "https://opencoding.de/python_mit_turtle/schleifen/",
+	"title": "Schleifen",
+	"tags": [],
+	"description": "",
+	"content": " Lektion 2: Schleifen Aufgabe 2.1: Schleifen Meist ist es nicht sehr effizient die selben Anweisungen mehrfach zu schreiben. Im folgenden Programm siehst du, wie du etwas wiederholen kannst. Die Zeilen 3 und 4 sind eingerückt - dies ist wichtig- um dem Programm mitzuteilen, dass diese Zeilen innerhalb der Schleife wiederholt werden:\nimport turtle for i in range(4): turtle.forward(100) turtle.right(90)  Aufgabe 2.2: Code analysieren Schau dir folgendes Programm an und überlege was es tut. Zeichne das Ergebnis auf ein Blatt Papier\nFolgende Fragen helfen dir bei der Analyse. * Wann zeichnet die Turtle, wann zeichnet sie nicht? * Welche Zeilen werden wiederholt, welche Zeilen werden nicht wiederholt?\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle import turtle turtle.penup() turtle.backward(300) turtle.pendown() for i in range(4): turtle.forward(100) turtle.right(90) turtle.penup() turtle.forward(150) turtle.pendown() for i in range(4): turtle.forward(100) turtle.right(90)  \nFühre jetzt den Code aus, um dich selbst zu überprüfen.\nAufgabe 2.3: Quadrate Zeichne das folgende Muster. Verwende für das Muster (So wie für alle folgenden Muster) Schleifen um möglichst wenige Befehle zu verwenden.\nAufgabe 2.4: Pentragramm Zeichne folgendes Muster\n![Fünfzackiger Stern(/python/fuenfzackiger_stern.jpg)\nAufgabe 2.5: Pentragramme Zeichne folgendes Muster\nAufgabe 2.6: Stern Zeichne folgendes Muster\nAufgabe 2.7: Größer werdende Rechtecke Zeichne folgendes Muster\n"
+},
+{
+	"uri": "https://opencoding.de/python-mit-pygame/03_bilder_zeichnen/",
+	"title": "Bilder zeichnen",
+	"tags": [],
+	"description": "",
+	"content": " Zeichne etwas auf den Bildschirm.\nDazu brauchst du 3 Zeilen Code:\nimage = pygame.image.load(\u0026quot;[Dateiname].png\u0026quot;)  Diese Zeile lädt das Bild. Achtung: Das Bild muss im selben Verzeichnis wie dein Programm liegen und du musst den Dateinamen entsprechend setzen\nscreen.blit(image, (50,50))  Diese Zeile blittet das Bild an die Position (50|50) (beachte, dass der Ursprung beim Bildschirm in der oberen Ecke sitzt)\npygame.display.flip()  Diese Zeile sorgt dafür, dass das Display neu geladen wird. Gegebenfalls musst du dein Bild noch skalieren. Dies geht über folgenden Befehl:\nimage = pygame.transform.scale(image, (20, 20))  So könnte dein Programm aussehen:\nimport pygame pygame.init() screen = pygame.display.set_mode((200,100)) running = True image = pygame.image.load(\u0026quot;smiley.jpg\u0026quot;) image = pygame.transform.scale(image, (20, 20)) screen.blit(image, (50,50)) while running: for event in pygame.event.get(): if event.type == pygame.QUIT: running = False pygame.display.flip()  Transparente Farben Manchmal möchte man, dass eine Farbe transparent gezeichnet wird. Dies geht mit:\nimage.set_colorkey((255,255,255)) # Die Farbe weiß soll transparent sein.  Hintergründe Den Hintergrund des Bildschirms kannst du folgendermaßen setzen\nscreen.fill((r,g,b))  r,g,b sind jeweils Zahlen zwischen 0 und 256 und die Anteile von red, green und blue in der Farbe. Hier findest du einen Farbwähler: https://www.rapidtables.com/web/color/RGB_Color.html\nDu kannst auch ein Bild als Hintergrund wählen:\nscreen.blit(bgd_image, (0,0))  "
+},
+{
+	"uri": "https://opencoding.de/python-mit-pygame/",
+	"title": "Computergrafik mit Pygame",
+	"tags": [],
+	"description": "",
+	"content": " Computergrafik mit Pygame In diesem Tutorial lernst du, wie du mit Python und Pygame zeichnen und Animationen erstellen kannst.\n"
+},
+{
+	"uri": "https://opencoding.de/python_mit_turtle/eingaben/",
+	"title": "Eingaben",
+	"tags": [],
+	"description": "",
+	"content": " Lektion 3: Benutzereingaben Aufgabe 3.1 Kopiere das folgende Programm in deinem Python-Editor, führe es aus und schaue was passiert.\nimport turtle sides = int(input(\u0026quot;How many sides would you like? \u0026quot;)) for i in range(sides): turtle.pencolor(\u0026quot;Red\u0026quot;) turtle.forward (50)  a) Beschreibe, was das Programm macht\nb) Erkläre was die Zeilen 2 und 3 des Programmes tun.\n \u0026ndash;\u0026gt; Erklärung anzeigen\nIn Zeile 2 passieren 3 Dinge in folgender Reihenfolge: 1. Eine Benutzereingabe wird mit der Funktion input() gelesen. 2. Die Funktion int() wandelt die Benutzereingabe in eine Zahl um. 3. Die Benutzereingabe wird gespeichert (unter dem Namen x) \nAufgabe 3.2: Stiftfarbe Ändere das Programm so, dass es fragt, was für eine Stiftfarbe du verwenden möchtest.\nHinweis: Du benötigst nicht die int() Funktion\nAufgabe 3.3: n-Ecke Als nächstes geht es darum Figuren zu zeichnen.\na) Überlege dir zunächst um welchen Winkel sich die Turtle drehen muss:\n   Anzahl Seiten Winkel     2    3    4    6    8    \u0026hellip;    n     b) Wie kannst du den Winkel berechnen, wenn du die Anzahl der Seiten kennst.\nc) Ergänze die folgende Gleichung (welche den Winkel abhängig von der Anzahl der Seiten berechnen soll:\nwinkel =\nAufgabe 3.4: n-Ecke zeichnen Ändere dein Programm (aus 3.1) so ab, dass eine Figur mit so vielen Seiten gezeichnet wird, wie der Benutzer eingibt.\nAufgabe 5: Challenge Schreibe ein Programm, dass die folgende Figur zeichnet. Dies ist mit nur wenigen Zeilen Code möglich.\n"
+},
+{
+	"uri": "https://opencoding.de/python_textadventures/03_funktionen/",
+	"title": "Funktionen",
+	"tags": [],
+	"description": "",
+	"content": "Je komplexer unser Programm wird, umso mehr macht es Sinn, Teile in Unterprogramme auszulagern. Dies geht mi elif entscheidung == \u0026ldquo;ende\u0026rdquo;: zustand = \u0026ldquo;Ende\u0026rdquo;t Hilfe von Funktionen.\nAn dieser Stelle wird eine Funktion Haupteingang geschrieben:\ndef haupteingang(): easygui.msgbox(\u0026quot;Du stehst am Eingang\u0026quot;) entscheidung = easygui.buttonbox(\u0026quot;Wohin gehst du\u0026quot;, \u0026quot;Mein Textadventure\u0026quot;, [\u0026quot;links\u0026quot;, \u0026quot;rechts\u0026quot;, \u0026quot;ende\u0026quot;]) if entscheidung == \u0026quot;links\u0026quot;: neuer_zustand = \u0026quot;Seiteneingang links\u0026quot; elif entscheidung == \u0026quot;rechts\u0026quot;: neuer_zustand = \u0026quot;Seiteneingang rechts\u0026quot; elif entscheidung == \u0026quot;ende\u0026quot;: zustand = \u0026quot;Ende\u0026quot; return neuer_zustand  Das Unterprogramm trägt den Namen Haupteingang und hat den Parameter entscheidung. Abhängig von dem, was als Wert für entscheidung übergeben wird, gibt das Unterprogramm einen anderen Wert zurück.\nIm Hauptprogramm können wir nun folgendermaßen auf das Unterprogramm zugreifen:\nimport easygui def haupteingang(): easygui.msgbox(\u0026quot;Du stehst am Eingang\u0026quot;) entscheidung = easygui.buttonbox(\u0026quot;Wohin gehst du\u0026quot;, \u0026quot;Mein Textadventure\u0026quot;, [\u0026quot;links\u0026quot;, \u0026quot;rechts\u0026quot;, \u0026quot;ende\u0026quot;]) if entscheidung == \u0026quot;links\u0026quot;: neuer_zustand = \u0026quot;Seiteneingang links\u0026quot; elif entscheidung == \u0026quot;rechts\u0026quot;: neuer_zustand = \u0026quot;Seiteneingang rechts\u0026quot; elif entscheidung == \u0026quot;ende\u0026quot;: zustand = \u0026quot;Ende\u0026quot; return neuer_zustand zustand = \u0026quot;Eingang\u0026quot; while zustand != \u0026quot;Ende\u0026quot;: if zustand == \u0026quot;Eingang\u0026quot;: zustand = haupteingang()  Auf diese Weise können wir weitere Unterprogramme hinzufügen:\nAuf diese Weise wird dein Code besser lesbar, da du einzelne Teile in die entsprechenden Unterprogramme auslagern kannst.\n"
+},
+{
+	"uri": "https://opencoding.de/data-science/03_matplotlib/",
+	"title": "Matplotlib",
+	"tags": [],
+	"description": "",
+	"content": " Installiere in Thonny die Bibliothek matplotlib und importiere diese:\nimport matplotlib as mlp import matplotlib.pyplot as plt  (Das Alias as im Import sagt, dass du die Bibliothek in Zukunft mit mpl aufrufen kannst - So sparst du dir Schreibarbeit)\nJetzt kannst du deinen ersten Plot anzeigen:\nplt.plot([1,2,3,4], [1,4,9,16], 'bo') plt.show()   Das erste Argument der Funktion ist eine Liste mit x-Werten\n Das zweite Argument der Funktion ist eine Liste mit y-Werten\n Das dritte Argument ist ein Format-String, der dir es leicht erlaubt, das Aussehen des Plots zu verwenden. Dieser besteht aus mehreren Teilen.\n  Farbe ^ Buchstabe ^ Farbe ^ | \u0026lsquo;b\u0026rsquo; | blue | | \u0026lsquo;g\u0026rsquo; | green | | \u0026lsquo;r\u0026rsquo; | red | | \u0026lsquo;c\u0026rsquo; | cyan | | \u0026rsquo;m\u0026rsquo; | magenta | | \u0026lsquo;y\u0026rsquo; | yellow | | \u0026lsquo;k\u0026rsquo; | black | | \u0026lsquo;w\u0026rsquo; | white | | | |\nMarkierung ^ Buchstabe ^ Markierung ^ | \u0026lsquo;.\u0026rsquo; | point marker | | \u0026lsquo;,\u0026rsquo; | pixel marker | | \u0026lsquo;o\u0026rsquo; | circle marker | | \u0026lsquo;v\u0026rsquo; | triangle_down marker | | \u0026lsquo;%%^%%\u0026rsquo; | triangle_up marker | | \u0026lsquo;%%\u0026lt;%%\u0026rsquo; | triangle_left marker | | \u0026lsquo;%%\u0026gt;%%\u0026rsquo; | triangle_right marker | | \u0026lsquo;1\u0026rsquo; | tri_down marker | | \u0026lsquo;2\u0026rsquo; | tri_up marker | | \u0026lsquo;3\u0026rsquo; | tri_left marker | | \u0026lsquo;4\u0026rsquo; | tri_right marker | | \u0026rsquo;s\u0026rsquo; | square marker | | \u0026lsquo;p\u0026rsquo; | pentagon marker | | \u0026lsquo;*\u0026rsquo; | star marker | | \u0026lsquo;h\u0026rsquo; | hexagon1 marker | | \u0026lsquo;H\u0026rsquo; | hexagon2 marker | | \u0026lsquo;+\u0026rsquo; | plus marker | | \u0026lsquo;x\u0026rsquo; | x marker | | \u0026rsquo;D\u0026rsquo; | diamond marker | | \u0026rsquo;d\u0026rsquo; | thindiamond marker | | \u0026lsquo;%%|%%\u0026rsquo; | vline marker | | \u0026lsquo;\u0026rsquo; | hline marker |\nLinien ^ Buchstabe ^ Linie ^ | \u0026lsquo;-\u0026rsquo; | solid line style | | \u0026lsquo;\u0026ndash;\u0026rsquo; | dashed line style | | \u0026lsquo;-.\u0026rsquo; | dash-dot line style | | \u0026lsquo;:\u0026rsquo; | dotted line style |\n"
+},
+{
+	"uri": "https://opencoding.de/python-mit-pygame/04_bewegungen/",
+	"title": "Bewegungen",
+	"tags": [],
+	"description": "",
+	"content": "Bewegungen kannst du hinzufügen, wenn du die festen Koordinaten, an die du ein Bild geblittet hast, variabel machst:\nx = 10 y = 10 stepx = 1 stepy = 1 while running: screen.blit(image, (x, y)) x = x+stepx  Wie du siehst entstehen zwei Probleme:\n Dein Bild hinterlässt eine Spur Dein Bild verschwindet aus dem Bildschirm.  Problem 1. lässt sich lösen, indem man zu Beginn der Mainloop immer erstmal den kompletten Bildschirm löscht:\nwhile running: screen.fill((20, 20, 20)) screen.blit(image, (x, y)) ...  Problem 2 lässt sich lösen, in dem man testet, ob das Bild außerhalb des Sichtbereiches ist.\n if x\u0026gt; screen.get_width() or x\u0026lt;0: stepx = stepx * (-1) x = x+ stepx  "
+},
+{
+	"uri": "https://opencoding.de/data-science/",
+	"title": "Data Science",
+	"tags": [],
+	"description": "",
+	"content": " Data Science Listen + Matplotlib\n"
+},
+{
+	"uri": "https://opencoding.de/python_mit_turtle/funktionen/",
+	"title": "Funktionen (Unterprogramme)",
+	"tags": [],
+	"description": "",
+	"content": " Aufgabe 1 Wenn du größere Programme schreibst, ist es am einfachsten, wenn du diese in Teilprogramme zerlegen kannst.\nIn Python funktioniert dies mit Funktionen (oder auch Subroutinen). Das folgende Programm erstellt eine Funktion, um ein kleines Quadrat zu zeichnen. Anschließend wird die Funktion einmal aufgerufen:\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle def square(): for i in range(4): turtle.forward(30) turtle.right(90) square()  \n Das Schlüsselworts def steht für define. Mit diesem Schlüsselwort wird signalisiert, dass im folgenden eine Funktion definiert wird. Anschließend folgt der Name der Funktion. Diese Funktion heißt square, denn es soll ein Quadrat gezeichnet werden. Nach dem Funktionsnamen folgen zwei Klammern und ein Doppelpunkt. Der Inhalt der Funktion ist eingerückt. Hier wird beschrieben, was bei Aufruf der Funktion passieren soll.  Um die Funktion aufzurufen (engl: call subroutine) schreibt man den Namen der Funktion gefolgt von den beiden Klammern im Programm auf.\nAufgabe:\nFühre das oben beschriebene Programm aus und schaue was passiert.\nAufgabe 2 Erstelle selbst eine eigene Funktion:\n Nenne sie nextshape Die Funktion soll folgendes tun:  Hebe den Stift an. Bewege dich um 60 vorwärts. Senke den Stift.   Schreibe ein Programm, dass mit Hilfe der Funktion 3 Quadrate zeichnet:\nHinweis: So funktionieren Funktionsaufrufe\nsquare() nextshape() square() nextshape() square()   \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle def square(): for i in range(4): turtle.forward(30) turtle.right(90) def nextshape(): turtle.penup() turtle.forward(60) turtle.pendown() square() nextshape() square() nextshape() square()  \nExkurs: Namen bekannt machen In jeder Programmiersprache müssen Namen zuerst bekannt gemacht werden, bevor sie benutzt werden können. Dies gilt für Variablen aber auch für Funktionen.\nDaher führt folgendes Programm zu einem Fehler\nsquare() def square(): for i in range(4): turtle.forward(30) turtle.right(90)  Python kann die Funktion in Zeile 1 noch nicht aufrufen, da an dieser Stelle der Name der Funktion noch nicht bekannt ist.\nAufgabe 3: 10 Rechtecke Ändere das Programm so ab, dass 10 Rechtecke gezeichnet werden. Verwende dafür eine for-Schleife.\nAufgabe 4: nextrow Erstelle eine Funktion nextrow, die folgendes macht.\n Hebe den Stift an Gehe 600 Schritte rückwärts Bewege dich 60 Schritte nach unten Drehe dich so, dass du nach rechts schaust.  Teste dein Programm, in dem du das Programm aus Aufgabe 3 so erweiterst, dass zwei Reihen mit 6 Rechtecken gezeichnet werden.\nHinweis: Mit folgender Anweisung kannst du die Turtle schneller bewegen:\nturtle.speed(10)  \u0026hellip;oder noch schneller:\nturtle.speed(0)   \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle def square(): for i in range(4): turtle.forward(30) turtle.right(90) def nextshape(): turtle.penup() turtle.forward(60) turtle.pendown() def nextrow(): turtle.penup() turtle.backward(600) turtle.right(90) turtle.forward(60) turtle.left(90) turtle.pendown() turtle.speed(10) for i in range(10): square() nextshape() nextrow() for i in range(10): square() nextshape()  \u0026lt;/details\nAufgabe 5: Ein Netz aus Quadraten Erweitere das Programm und erstelle ein 10x10 Netz an Rechtecken.\n Erstelle eine Routine gotostart(), die die Turtle 300 nach links und 300 nach oben bewegt, damit das komplette Netz im sichtbaren Bereich gezeichnet wird.\n Verwende eine Schleife um auf die gleiche Weise wie du die 10 Rechtecke gezeichnet hast auch 10 Reihen zu zeichnen. So kann ein Ansatz dafür aussehen:\nfor i in range(10): for j in range(10): ...    \u0026ndash;\u0026gt; Lösung anzeigen\nfor i in range(10): for j in range(10): square() nextshape() nextrow()  \n====== Aufgabe 5: Mehrfarbiges Grid ======\nErstelle ein mehrfarbiges Grid.\n Suche dir dazu zusammen, was du benötigst. Hier findest du eine Übersicht über alle Turtle-Funktionen: https://docs.python.org/3.3/library/turtle.html?highlight=turtle  "
+},
+{
+	"uri": "https://opencoding.de/python_textadventures/04_weitere_ideen/",
+	"title": "Weitere Ideen",
+	"tags": [],
+	"description": "",
+	"content": " Zufall Oft sollen Dinge vom Zufall abhängen. Dies kannst du in Python folgendermaßen machen:\nimport random print(\u0026quot;Würfle mit einem Würfel\u0026quot;) wuerfel = random.randint(1,6) print(wuerfel)  Überlege dir, wie du mit Hilfe dieser Funktion Zufallszahlen in dein Programm einbauen kann\nInventar - Für fortgeschrittene Wenn es viele mögliche Gegenstände gibt, die ein Charakter mit sich führen kann, dann wird es schnell unübersichtlich, wenn du für jeden Gegenstand eine einzelne Variable hinzufügst.\nDafür gibt es in Python Listen:\ninventar = []  erstellt eine neue Liste\ninventar.append(\u0026quot;Schlüssel\u0026quot;)  fügt einen Schlüssel zum Inventar hinzu.\ninventar.remove(\u0026quot;Schlüssel\u0026quot;)  löscht den Schlüssel aus dem Inventar.\nMit folgender Anweisung\nif \u0026quot;Schluessel\u0026quot; in inventar: ...  kannst du überprüfen, ob ein Charakter den Gegenstand mit sich führt.\nInventar an Funktionen übergeben Die Inventar-Variablen muss irgendwo im Hauptprogramm definiert werden. Damit die Variable auch in den Unterprogrammen bekannt ist, muss sie als Parameter übergeben werden.\ninventar = [] zustand = \u0026quot;Anfang\u0026quot; .... def tue_irgendetwas(inventar) if \u0026quot;Gegenstand\u0026quot; in inventar: inventar.append(\u0026quot;neuer Gegenstand\u0026quot;) # Hier kommt das Hauptprogramm while zustand != Ende tue_irgendetwas(inventar)  "
+},
+{
+	"uri": "https://opencoding.de/python-mit-pygame/05_mehr_infos/",
+	"title": "Mehr Infos",
+	"tags": [],
+	"description": "",
+	"content": "Hier findest du ein umfangreicheres Tutorial: https://dr0id.bitbucket.io/legacy/pygame_tutorials.html\n"
+},
+{
+	"uri": "https://opencoding.de/python_mit_turtle/zufall/",
+	"title": "Zufall",
+	"tags": [],
+	"description": "",
+	"content": " Aufgabe 1: Zufällige Rechtecke Erstelle ein neues Programm.\nDamit wir zufällige Quadrate zeichnen können, benötigen wir die random() Funktion. Wir werden eine zufällige Zahl erstellen und dann dieser Zahl eine Farbe zuweisen.\nBetrachte dazu folgendes Programm (Hinweis: Zeilen, die mit # beginnen sind Kommentare, die vom Computer nicht gelesen werden, sondern dazu gedacht sind von Menschen gelesen zu werden):\nimport random import turtle colnum = random.randint(1, 2) # Column (engl. Spalte) hat entweder den Wert 1 oder 2. if colnum == 1: pc = \u0026quot;Red\u0026quot; elif colnum == 2: pc = \u0026quot;Blue\u0026quot; # == bedeutet: \u0026quot;Das gleiche wie\u0026quot; # = bedeutet: \u0026quot;Soll das gleiche werden wie\u0026quot; turtle.pencolor(pc) for i in range(4): turtle.forward(50) turtle.right(90)   if bedeutet: Falls die Bedingung gegeben ist, führe den eingerückten Code aus. elif bedeutet: Falls die If-Bedingung nicht zutrifft, führe den eingerückten Code aus.  Aufgabe Führe das Programm aus und vollziehe nach, was passiert.\nAufgabe 2 Erweitere das Programm so, dass die Rechtecke in einer von 5 Farben deiner Wahl gezeichnet werden.\nAufgabe 3: In Funktion auslagern Der Code zum Auswählen von Farben soll im Programm immer wieder verwendet werden. Daher lagern wir ihn in eine Funktion aus.\nDie Funktion soll folgendes tun:\n Hole dir eine beliebige Zufallszahl Hole dir die Farbe, die zu dieser Zufallszahl passt. Gebe diese Zahl an das Hauptprogramm zurück (dafür verwendet man die return-Anweisung   \u0026ndash;\u0026gt; Lösung anzeigen\nimport random import turtle def getcolour(): colnum = random.randint(1, 2) if colnum == 1: colour = \u0026quot;Red\u0026quot; elif colnum == 2: colour = \u0026quot;Blue\u0026quot; return colour pc = getcolour() turtle.pencolor(pc) for i in range(4): turtle.forward(50) turtle.right(90)  Aufgabe Führe das Programm aus und schaue was passiert.\nAufgabe 3: Erweitere das Programm so, dass das Quadrat mit einer zufälligen Farbe gefüllt wird. (Du benötigst dafür 4 Zeilen Code).\nAufgabe 4: Füge die getcolour() Funktion zu deinem Programm hinzu, in dem du ein Netz aus Rechtecken gezeichnet hast (Verwende dazu Copy \u0026amp; paste, schreibe nicht das ganze Programm ab). Ändere das Programm nun so ab, dass:\n Quadrate in zufälligen Farben gezeichnet werden. Quadrate in zufälligen Farben gefüllt werden.  "
+},
+{
+	"uri": "https://opencoding.de/python_mit_turtle/zufallsmuster/",
+	"title": "Zufallsmuster",
+	"tags": [],
+	"description": "",
+	"content": " Aufgabe 1: Grundsätzliche Überlegungen Das folgende Programm erstellt eine Form:\nimport turtle def shape(): for i in range(4): turtle.forward(50) turtle.right(90) shape()  Beantworte folgende Fragen, passe das Programm dafür an:\n Wie müsste man das Programm verändern, wenn man eine dreiseitige Figur erstellen möchte?\n Wie müsste man das Programm verändern, wenn man eine fünfseitige Figur erstellen möchte?\n Was ist die Beziehung zwischen Seitenanzahl und Winkel, den die Turtle zeichnen muss.\n Was benötigst du noch, wenn du eine zufällige Figur zwischen 3 und 6 Ecken zeichnen möchtest?\n  Aufgabe 2: Parameter Damit das Unterprogramm beliebige Formen zeichnen kann, musst das Unterprogramm wissen, wie viele Seiten die Figur haben soll. Du kannst dies mit Hilfe von Parametern realisieren.\nBetrachte dazu folgendes Programm\ndef shape(anzahl): print(anzahl) anzahl = 3 shape(anzahl)  Probiere aus, was passiert, wenn du den Wert für Anzahl in Zeile 3 durch 4,5 oder 6 ersetzt.\nAufgabe 3: Parameter verwenden Du kannst den Namen Anzahl in deiner Funktion wie eine Zahl verwenden.\ndef shape(anzahl): for i in range(anzahl): turtle.forward(100) turtle.right(...) shape()  Finde den richtigen Ausdruck für \u0026hellip; heraus, so dass die Figur mit der richtigen Anzahl an Seiten gezeichnet wird. Du kannst in die Klammern aus Rechenausdrücke einsetzen, wie z.B. anzahl*10, anzahl / 10, \u0026hellip;.\nAufgabe 4: Parameter verwenden Erweitere deine Programme aus den vorherigen Übungen so, dass zufällige Figuren gezeichnet werden.\n"
+},
+{
+	"uri": "https://opencoding.de/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " Lerneinheiten  Python mit Turtlegrafik  Python mit Turtlegrafik In diesem Tutorial lernst du, wie du mit Hilfe von Turtle-Grafik mit Python Algorithmen erstellen kannst.\n Python - Textadventures  Python Textadventures In diesem Tutorial lernst du, wie du mit Python einfache Textadventures erstellen kannst.\n Computergrafik mit Pygame  Computergrafik mit Pygame In diesem Tutorial lernst du, wie du mit Python und Pygame zeichnen und Animationen erstellen kannst.\n Data Science  Data Science Listen + Matplotlib\n "
+},
+{
+	"uri": "https://opencoding.de/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://opencoding.de/datenschutz/",
+	"title": "Datenschutzerklärung",
+	"tags": [],
+	"description": "",
+	"content": " Datenschutzerklärung Generelle Informationen Dieses Blog wird bei Uberspace gehostet. Wenn Sie dieses Blog besuchen, werden automatisch einige Daten an den Webserver übertragen und dort gespeichert. Dies ist zur Anzeige dieser Webseite technisch erforderlich und beschränkt sich auf den dafür notwendigen Umfang. Es handelt sich insbesondere um folgende Informationen: die Referrer-URL (die Webseite, von der Sie kommen) / die IP-Adresse des Gerätes, mit dem sie auf den Blog zugreifen / den verwendeten Browser / Uhrzeit und Datum / das verwendete Betriebssystem. Diese Informationen dienen dazu, dieses Blog überhaupt anbieten zu können. Sie können keinen bestimmten Personen zugeordnet werden und werden nicht mit personenbezogenen Informationen zusammengeführt. Eine rein statistische Auswertung bleibt vorbehalten. Sobald die Informationen nicht mehr benötigt werden, werden sie gelöscht oder anonymisiert.\nDen Vertrag zur Auftragsverarbeitung mit Uberspace finden sie hier\nExterne Bibliotheken Auf dieser Seite werden Programme von repl.it eingebunden. Lese die Datenschutzerklärung von repl.it\nKommentare Kommentare werden mit dem Tool utteranc.es auf github gespeichert. Wenn du Kommentare auf dieser Webseite hinterlässt, erklärst du dich mit den Bestimmungen von github einverstanden. Andere Benutzer können den Github-Benutzernamen und den Zeitpunkt der Kommentierung selbst lesen. Utterances gibt selbst an: \u0026ldquo;No tracking, no ads, always free\u0026rdquo;\nButtons zum Teilen der Beiträge Unter den Beiträgen befinden sich Schaltflächen, mit denen Beiträge über Google+, Facebook, Twitter, Xing sowie per E-Mail geteilt werden können. Bei diesen Schaltflächen handelt es sich nicht um „Social Plugins“, sondern um bloße Links. Sofern Sie die Schaltflächen nicht benutzen, werden keinerlei Daten an die genannten Unternehmen übertragen. Ihre Surfverhalten auf diesem Blog kann somit von diesen Unternehmen nicht verfolgt werden. Nur wenn Sie sich entschließen, die Buttons zu nutzen um Blog-Beiträge zu teilen (und sich dazu ggf. bei den genannten Seiten einloggen), erhält das betreffende Unternehmen – z.B. Facebook\nVerantwortliche Stelle im Sinne des Datenschutzrechts (BDSG/TMG)  Andreas Siebel Usinger Straße 1 61273 Wehrheim Email: andreas.siebel@it-teaching.de  Wenn Sie Ansprüche auf Auskunft, Berichtigung, Sperrung oder Löschung nach dem BDSG geltend machen oder eine ggf. erteilte Einwilligung widerrufen wollen, wenden Sie sich bitte bevorzugt an die genannte E-Mail-Adresse.\n"
+},
+{
+	"uri": "https://opencoding.de/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

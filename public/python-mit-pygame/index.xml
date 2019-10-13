@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computergrafik mit Pygame on opencoding</title>
+    <link>https://opencoding.de/python-mit-pygame/</link>
+    <description>Recent content in Computergrafik mit Pygame on opencoding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    
+	<atom:link href="https://opencoding.de/python-mit-pygame/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Erste Schritte</title>
+      <link>https://opencoding.de/python-mit-pygame/01_erste_schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python-mit-pygame/01_erste_schritte/</guid>
+      <description>Installation Thonny Installiere über Tools -&amp;gt; Manage Packages die Bibliothek pygame
+Erste Schritte Folgender Code erstellt ein Fenster, dass sofort wieder verschwindet:
+import pygame pygame.init() screen = pygame.display.set_mode((200,100))  Die Mainloop Nun brauchst du eine Mainloop. Ergänze dazu folgenden Code:
+running = True while running: for event in pygame.event.get(): if event.type == pygame.QUIT: running = False  Bilder zeichnen Zeichne etwas auf den Bildschirm.
+Dazu brauchst du 3 Zeilen Code:</description>
+    </item>
+    
+    <item>
+      <title>Die Mainloop</title>
+      <link>https://opencoding.de/python-mit-pygame/02_mainloop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python-mit-pygame/02_mainloop/</guid>
+      <description>Nun brauchst du eine Mainloop, d.h. eine Schleife die ständig läuft, bis die Zustandsvariable running den Wert False annimmt (z.B. wenn der Benutzer auf das x-Symbol des Fensters klickt.)
+Ergänze dazu folgenden Code:
+running = True while running: for event in pygame.event.get(): if event.type == pygame.QUIT: running = False  </description>
+    </item>
+    
+    <item>
+      <title>Bilder zeichnen</title>
+      <link>https://opencoding.de/python-mit-pygame/03_bilder_zeichnen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python-mit-pygame/03_bilder_zeichnen/</guid>
+      <description>Zeichne etwas auf den Bildschirm.
+Dazu brauchst du 3 Zeilen Code:
+image = pygame.image.load(&amp;quot;[Dateiname].png&amp;quot;)  Diese Zeile lädt das Bild. Achtung: Das Bild muss im selben Verzeichnis wie dein Programm liegen und du musst den Dateinamen entsprechend setzen
+screen.blit(image, (50,50))  Diese Zeile blittet das Bild an die Position (50|50) (beachte, dass der Ursprung beim Bildschirm in der oberen Ecke sitzt)
+pygame.display.flip()  Diese Zeile sorgt dafür, dass das Display neu geladen wird.</description>
+    </item>
+    
+    <item>
+      <title>Bewegungen</title>
+      <link>https://opencoding.de/python-mit-pygame/04_bewegungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python-mit-pygame/04_bewegungen/</guid>
+      <description>Bewegungen kannst du hinzufügen, wenn du die festen Koordinaten, an die du ein Bild geblittet hast, variabel machst:
+x = 10 y = 10 stepx = 1 stepy = 1 while running: screen.blit(image, (x, y)) x = x+stepx  Wie du siehst entstehen zwei Probleme:
+ Dein Bild hinterlässt eine Spur Dein Bild verschwindet aus dem Bildschirm.  Problem 1. lässt sich lösen, indem man zu Beginn der Mainloop immer erstmal den kompletten Bildschirm löscht:</description>
+    </item>
+    
+    <item>
+      <title>Mehr Infos</title>
+      <link>https://opencoding.de/python-mit-pygame/05_mehr_infos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python-mit-pygame/05_mehr_infos/</guid>
+      <description>Hier findest du ein umfangreicheres Tutorial: https://dr0id.bitbucket.io/legacy/pygame_tutorials.html</description>
+    </item>
+    
+  </channel>
+</rss>

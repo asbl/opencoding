@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python - Textadventures on opencoding</title>
+    <link>https://opencoding.de/python_textadventures/</link>
+    <description>Recent content in Python - Textadventures on opencoding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    
+	<atom:link href="https://opencoding.de/python_textadventures/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Erste Schritte (Entscheidungen if-then-else)</title>
+      <link>https://opencoding.de/python_textadventures/01_first_steps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_textadventures/01_first_steps/</guid>
+      <description>1. Die Mainloop Schreibe folgenden Code:
+zustand = &amp;quot;Eingang&amp;quot; while zustand!= &amp;quot;Ende&amp;quot;: pass  Damit hast du eine Endlosschleife und das Grundgerüst für dein späteres Textadventure. Innerhalb dieser Endlosschleife kannst du jetzt Aktionen abfragen.
+Du kannst dein Programm in Thonny mit dem Stop-Icon beenden, sonst läuft es ewig weiter:
+2. Entscheidungen Jetzt wird eine Entscheidung ergänzt:
+while zustand != &amp;quot;Ende&amp;quot;: print(&amp;quot;Du stehst an folgendem Ort: &amp;quot; + zustand) entscheidung = input(&amp;quot;In welche Richtung gehst du?</description>
+    </item>
+    
+    <item>
+      <title>Easygui</title>
+      <link>https://opencoding.de/python_textadventures/02_easygui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_textadventures/02_easygui/</guid>
+      <description>Eine grafische Benutzeroberfläche Installation Thonny: Installiere zunächst das Package Easy-Gui
+ Wähle dazu in Thonny das Menü: &amp;ldquo;Tools&amp;rdquo; -&amp;gt; &amp;ldquo;Manage Packages&amp;rdquo;
+ Suche nach EasyGui und klicke auf install.
+  repl.it In repl.it werden Pakete automatisch installiert, wenn du sie mit der import-Anweisung importierst.
+Erste Schritte Jetzt kannst du folgendermaßen EasyGui Dialoge einbinden.
+import easygui zustand = &amp;quot;Eingang&amp;quot; while zustand != &amp;quot;Ende&amp;quot;: easygui.msgbox(&amp;quot;Du stehst an folgendem Ort: &amp;quot; + zustand, &amp;quot;Mein Textadventure&amp;quot;) entscheidung = easygui.</description>
+    </item>
+    
+    <item>
+      <title>Funktionen</title>
+      <link>https://opencoding.de/python_textadventures/03_funktionen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_textadventures/03_funktionen/</guid>
+      <description>Je komplexer unser Programm wird, umso mehr macht es Sinn, Teile in Unterprogramme auszulagern. Dies geht mi elif entscheidung == &amp;ldquo;ende&amp;rdquo;: zustand = &amp;ldquo;Ende&amp;rdquo;t Hilfe von Funktionen.
+An dieser Stelle wird eine Funktion Haupteingang geschrieben:
+def haupteingang(): easygui.msgbox(&amp;quot;Du stehst am Eingang&amp;quot;) entscheidung = easygui.buttonbox(&amp;quot;Wohin gehst du&amp;quot;, &amp;quot;Mein Textadventure&amp;quot;, [&amp;quot;links&amp;quot;, &amp;quot;rechts&amp;quot;, &amp;quot;ende&amp;quot;]) if entscheidung == &amp;quot;links&amp;quot;: neuer_zustand = &amp;quot;Seiteneingang links&amp;quot; elif entscheidung == &amp;quot;rechts&amp;quot;: neuer_zustand = &amp;quot;Seiteneingang rechts&amp;quot; elif entscheidung == &amp;quot;ende&amp;quot;: zustand = &amp;quot;Ende&amp;quot; return neuer_zustand  Das Unterprogramm trägt den Namen Haupteingang und hat den Parameter entscheidung.</description>
+    </item>
+    
+    <item>
+      <title>Weitere Ideen</title>
+      <link>https://opencoding.de/python_textadventures/04_weitere_ideen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_textadventures/04_weitere_ideen/</guid>
+      <description>Zufall Oft sollen Dinge vom Zufall abhängen. Dies kannst du in Python folgendermaßen machen:
+import random print(&amp;quot;Würfle mit einem Würfel&amp;quot;) wuerfel = random.randint(1,6) print(wuerfel)  Überlege dir, wie du mit Hilfe dieser Funktion Zufallszahlen in dein Programm einbauen kann
+Inventar - Für fortgeschrittene Wenn es viele mögliche Gegenstände gibt, die ein Charakter mit sich führen kann, dann wird es schnell unübersichtlich, wenn du für jeden Gegenstand eine einzelne Variable hinzufügst.</description>
+    </item>
+    
+  </channel>
+</rss>

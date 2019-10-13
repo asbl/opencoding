@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python mit Turtlegrafik on opencoding</title>
+    <link>https://opencoding.de/python_mit_turtle/</link>
+    <description>Recent content in Python mit Turtlegrafik on opencoding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    
+	<atom:link href="https://opencoding.de/python_mit_turtle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Basics</title>
+      <link>https://opencoding.de/python_mit_turtle/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_mit_turtle/basics/</guid>
+      <description>Grundlagen Operationen    Befehl Beschreibung     turtle.forward() Gehe vorwärts   turtle.backward() Gehe rückwärts   turtle.right(x) Drehe dich um x Grad nach rechts   turtle.left(x) Drehe dich um x Grad nach links   turtle.penup() Hebe den Stift an (Bewege dich weiter, ohne zu zeichnen)   turtle.pendown() Setzt den Stift wieder ab, so dass du weiterzeichnest   turtle.fillcolor(&amp;ldquo;brown&amp;rdquo;) Ändert die Füllfarbe auf Braun   turtle.</description>
+    </item>
+    
+    <item>
+      <title>Schleifen</title>
+      <link>https://opencoding.de/python_mit_turtle/schleifen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_mit_turtle/schleifen/</guid>
+      <description>Lektion 2: Schleifen Aufgabe 2.1: Schleifen Meist ist es nicht sehr effizient die selben Anweisungen mehrfach zu schreiben. Im folgenden Programm siehst du, wie du etwas wiederholen kannst. Die Zeilen 3 und 4 sind eingerückt - dies ist wichtig- um dem Programm mitzuteilen, dass diese Zeilen innerhalb der Schleife wiederholt werden:
+import turtle for i in range(4): turtle.forward(100) turtle.right(90)  Aufgabe 2.2: Code analysieren Schau dir folgendes Programm an und überlege was es tut.</description>
+    </item>
+    
+    <item>
+      <title>Eingaben</title>
+      <link>https://opencoding.de/python_mit_turtle/eingaben/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_mit_turtle/eingaben/</guid>
+      <description>Lektion 3: Benutzereingaben Aufgabe 3.1 Kopiere das folgende Programm in deinem Python-Editor, führe es aus und schaue was passiert.
+import turtle sides = int(input(&amp;quot;How many sides would you like? &amp;quot;)) for i in range(sides): turtle.pencolor(&amp;quot;Red&amp;quot;) turtle.forward (50)  a) Beschreibe, was das Programm macht
+b) Erkläre was die Zeilen 2 und 3 des Programmes tun.
+ &amp;ndash;&amp;gt; Erklärung anzeigen
+In Zeile 2 passieren 3 Dinge in folgender Reihenfolge: 1. Eine Benutzereingabe wird mit der Funktion input() gelesen.</description>
+    </item>
+    
+    <item>
+      <title>Funktionen (Unterprogramme)</title>
+      <link>https://opencoding.de/python_mit_turtle/funktionen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_mit_turtle/funktionen/</guid>
+      <description>Aufgabe 1 Wenn du größere Programme schreibst, ist es am einfachsten, wenn du diese in Teilprogramme zerlegen kannst.
+In Python funktioniert dies mit Funktionen (oder auch Subroutinen). Das folgende Programm erstellt eine Funktion, um ein kleines Quadrat zu zeichnen. Anschließend wird die Funktion einmal aufgerufen:
+ &amp;ndash;&amp;gt; Lösung anzeigen
+import turtle def square(): for i in range(4): turtle.forward(30) turtle.right(90) square()  
+ Das Schlüsselworts def steht für define. Mit diesem Schlüsselwort wird signalisiert, dass im folgenden eine Funktion definiert wird.</description>
+    </item>
+    
+    <item>
+      <title>Zufall</title>
+      <link>https://opencoding.de/python_mit_turtle/zufall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_mit_turtle/zufall/</guid>
+      <description>Aufgabe 1: Zufällige Rechtecke Erstelle ein neues Programm.
+Damit wir zufällige Quadrate zeichnen können, benötigen wir die random() Funktion. Wir werden eine zufällige Zahl erstellen und dann dieser Zahl eine Farbe zuweisen.
+Betrachte dazu folgendes Programm (Hinweis: Zeilen, die mit # beginnen sind Kommentare, die vom Computer nicht gelesen werden, sondern dazu gedacht sind von Menschen gelesen zu werden):
+import random import turtle colnum = random.randint(1, 2) # Column (engl.</description>
+    </item>
+    
+    <item>
+      <title>Zufallsmuster</title>
+      <link>https://opencoding.de/python_mit_turtle/zufallsmuster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_mit_turtle/zufallsmuster/</guid>
+      <description>Aufgabe 1: Grundsätzliche Überlegungen Das folgende Programm erstellt eine Form:
+import turtle def shape(): for i in range(4): turtle.forward(50) turtle.right(90) shape()  Beantworte folgende Fragen, passe das Programm dafür an:
+ Wie müsste man das Programm verändern, wenn man eine dreiseitige Figur erstellen möchte?
+ Wie müsste man das Programm verändern, wenn man eine fünfseitige Figur erstellen möchte?
+ Was ist die Beziehung zwischen Seitenanzahl und Winkel, den die Turtle zeichnen muss.</description>
+    </item>
+    
+  </channel>
+</rss>

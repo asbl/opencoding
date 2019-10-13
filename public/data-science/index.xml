@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on opencoding</title>
+    <link>https://opencoding.de/data-science/</link>
+    <description>Recent content in Data Science on opencoding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    
+	<atom:link href="https://opencoding.de/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Erste Schritte</title>
+      <link>https://opencoding.de/data-science/01_erste_schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/data-science/01_erste_schritte/</guid>
+      <description>In diesem Tutorial werden dir erste Schritte in den Bereich Data-Science gezeigt.
+Wir wird gezeigt, wie du Daten in Listen darstellst und wie du diese mit der Bibliothek matplotlib grafisch anzeigst.</description>
+    </item>
+    
+    <item>
+      <title>Listen</title>
+      <link>https://opencoding.de/data-science/02_listen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/data-science/02_listen/</guid>
+      <description>Oft will man mehrere Daten in Folge speichern, z.B. die Temperaturdaten eines Monats. Dann ist es aber unpraktisch, für jede Information eine eigene Variable einzuführen.
+Ohne Listen müsstest du jeden Wert in einer einzelnen Variable speichern:
+d1 = 14.2 d2 = 13.2 d3 = 15.2 ...  Mit Listen geht dies in Kurzform:
+list = [14.2, 13.2, 15.2, ... ]  </description>
+    </item>
+    
+    <item>
+      <title>Matplotlib</title>
+      <link>https://opencoding.de/data-science/03_matplotlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/data-science/03_matplotlib/</guid>
+      <description>Installiere in Thonny die Bibliothek matplotlib und importiere diese:
+import matplotlib as mlp import matplotlib.pyplot as plt  (Das Alias as im Import sagt, dass du die Bibliothek in Zukunft mit mpl aufrufen kannst - So sparst du dir Schreibarbeit)
+Jetzt kannst du deinen ersten Plot anzeigen:
+plt.plot([1,2,3,4], [1,4,9,16], &#39;bo&#39;) plt.show()   Das erste Argument der Funktion ist eine Liste mit x-Werten
+ Das zweite Argument der Funktion ist eine Liste mit y-Werten</description>
+    </item>
+    
+  </channel>
+</rss>
