@@ -19,7 +19,11 @@
   </url>
   
   <url>
-    <loc>https://opencoding.de/python_mit_turtle/basics/</loc>
+    <loc>https://opencoding.de/python_mit_turtle/01_installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/python_mit_turtle/02_basics/</loc>
   </url>
   
   <url>
@@ -43,19 +47,11 @@
   </url>
   
   <url>
-    <loc>https://opencoding.de/python_mit_turtle/schleifen/</loc>
-  </url>
-  
-  <url>
     <loc>https://opencoding.de/python-mit-pygame/03_bilder_zeichnen/</loc>
   </url>
   
   <url>
     <loc>https://opencoding.de/python-mit-pygame/</loc>
-  </url>
-  
-  <url>
-    <loc>https://opencoding.de/python_mit_turtle/eingaben/</loc>
   </url>
   
   <url>
@@ -67,6 +63,10 @@
   </url>
   
   <url>
+    <loc>https://opencoding.de/python_mit_turtle/03_schleifen/</loc>
+  </url>
+  
+  <url>
     <loc>https://opencoding.de/python-mit-pygame/04_bewegungen/</loc>
   </url>
   
@@ -75,7 +75,7 @@
   </url>
   
   <url>
-    <loc>https://opencoding.de/python_mit_turtle/funktionen/</loc>
+    <loc>https://opencoding.de/python_mit_turtle/04_eingaben/</loc>
   </url>
   
   <url>
@@ -83,15 +83,19 @@
   </url>
   
   <url>
+    <loc>https://opencoding.de/python_mit_turtle/05_funktionen/</loc>
+  </url>
+  
+  <url>
     <loc>https://opencoding.de/python-mit-pygame/05_mehr_infos/</loc>
   </url>
   
   <url>
-    <loc>https://opencoding.de/python_mit_turtle/zufall/</loc>
+    <loc>https://opencoding.de/python_mit_turtle/06_zufall/</loc>
   </url>
   
   <url>
-    <loc>https://opencoding.de/python_mit_turtle/zufallsmuster/</loc>
+    <loc>https://opencoding.de/python_mit_turtle/07_zufallsmuster/</loc>
   </url>
   
   <url>

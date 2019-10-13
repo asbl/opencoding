@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Bewegungen :: opencoding</title>
+    <title>Zufallsmuster :: opencoding</title>
 
     
     <link href="/css/nucleus.css?1570989345" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/python-mit-pygame/04_bewegungen/">
+  <body class="" data-url="/python_mit_turtle/07_zufallsmuster/">
     <nav id="sidebar" class="">
 
 
@@ -78,7 +78,7 @@
   
     
     <li data-nav-id="/python_mit_turtle/" title="Python mit Turtlegrafik" class="dd-item 
-        
+        parent
         
         
         ">
@@ -216,7 +216,7 @@
  
   
     
-      <li data-nav-id="/python_mit_turtle/07_zufallsmuster/" title="Zufallsmuster" class="dd-item ">
+      <li data-nav-id="/python_mit_turtle/07_zufallsmuster/" title="Zufallsmuster" class="dd-item active">
         <a href="/python_mit_turtle/07_zufallsmuster/">
         <b>7. </b>Zufallsmuster
         
@@ -351,7 +351,7 @@
   
     
     <li data-nav-id="/python-mit-pygame/" title="Computergrafik mit Pygame" class="dd-item 
-        parent
+        
         
         
         ">
@@ -432,7 +432,7 @@
  
   
     
-      <li data-nav-id="/python-mit-pygame/04_bewegungen/" title="Bewegungen" class="dd-item active">
+      <li data-nav-id="/python-mit-pygame/04_bewegungen/" title="Bewegungen" class="dd-item ">
         <a href="/python-mit-pygame/04_bewegungen/">
         <b>4. </b>Bewegungen
         
@@ -624,7 +624,7 @@
             
           
           
-            <a href='/'></a> > <a href='/python-mit-pygame/'>Computergrafik mit Pygame</a> > Bewegungen
+            <a href='/'></a> > <a href='/python_mit_turtle/'>Python mit Turtlegrafik</a> > Zufallsmuster
           
          
           
@@ -637,7 +637,20 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#aufgabe-1-grundsätzliche-überlegungen">Aufgabe 1: Grundsätzliche Überlegungen</a></li>
+<li><a href="#aufgabe-2-parameter">Aufgabe 2: Parameter</a></li>
+<li><a href="#aufgabe-3-parameter-verwenden">Aufgabe 3: Parameter verwenden</a></li>
+<li><a href="#aufgabe-4-parameter-verwenden">Aufgabe 4: Parameter verwenden</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -653,7 +666,7 @@
           
             <h1>
               
-              Bewegungen
+              Zufallsmuster
             </h1>
           
 
@@ -661,38 +674,67 @@
 
 
 
-<p>Bewegungen kannst du hinzufügen, wenn du die festen Koordinaten, an die du ein Bild geblittet hast, variabel machst:</p>
 
-<pre><code class="language-python">x = 10
-y = 10
-stepx = 1
-stepy = 1
-while running:
-    screen.blit(image, (x, y))
-    x = x+stepx
+
+<h3 id="aufgabe-1-grundsätzliche-überlegungen">Aufgabe 1: Grundsätzliche Überlegungen</h3>
+
+<p>Das folgende Programm erstellt eine Form:</p>
+
+<pre><code class="language-python">import turtle
+
+def shape():
+  for i in range(4):
+    turtle.forward(50)
+    turtle.right(90)
+ 
+shape()
 </code></pre>
 
-<p>Wie du siehst entstehen zwei Probleme:</p>
+<p>Beantworte folgende Fragen, passe das Programm dafür an:</p>
 
-<ol>
-<li>Dein Bild hinterlässt eine Spur</li>
-<li>Dein Bild verschwindet aus dem Bildschirm.</li>
-</ol>
+<ul>
+<li><p>Wie müsste man das Programm verändern, wenn man eine dreiseitige Figur erstellen möchte?</p></li>
 
-<p>Problem 1. lässt sich lösen, indem man zu Beginn der Mainloop immer erstmal den kompletten Bildschirm löscht:</p>
+<li><p>Wie müsste man das Programm verändern, wenn man eine fünfseitige Figur erstellen möchte?</p></li>
 
-<pre><code class="language-python">while running:
-    screen.fill((20, 20, 20))
-    screen.blit(image, (x, y))
-    ...
+<li><p>Was ist die Beziehung zwischen Seitenanzahl und Winkel, den die Turtle zeichnen muss.</p></li>
+
+<li><p>Was benötigst du noch, wenn du eine zufällige Figur zwischen 3 und 6 Ecken zeichnen möchtest?</p></li>
+</ul>
+
+<h3 id="aufgabe-2-parameter">Aufgabe 2: Parameter</h3>
+
+<p>Damit das Unterprogramm beliebige Formen zeichnen kann, musst das Unterprogramm wissen, wie viele Seiten die Figur haben soll. Du kannst dies mit Hilfe von Parametern realisieren.</p>
+
+<p>Betrachte dazu folgendes Programm</p>
+
+<p>def shape(anzahl):
+    print(anzahl)</p>
+
+<p>anzahl = 3
+shape(anzahl)</p>
+
+<p>Probiere aus, was passiert, wenn du den Wert für Anzahl in Zeile 3 durch 4,5 oder 6 ersetzt.</p>
+
+<p>Hinweis: In repl.it siehst du die Ausgabe mit Klick auf <strong>Console</strong></p>
+
+<h3 id="aufgabe-3-parameter-verwenden">Aufgabe 3: Parameter verwenden</h3>
+
+<p>Du kannst den Namen Anzahl in deiner Funktion wie eine Zahl verwenden.</p>
+
+<pre><code class="language-python">def shape(anzahl):
+  for i in range(anzahl):
+    turtle.forward(100)
+    turtle.right(...)
+ 
+shape()
 </code></pre>
 
-<p>Problem 2 lässt sich lösen, in dem man testet, ob das Bild außerhalb des Sichtbereiches ist.</p>
+<p>Finde den richtigen Ausdruck für &hellip; heraus, so dass die Figur mit der richtigen Anzahl an Seiten gezeichnet wird. Du kannst in die Klammern aus Rechenausdrücke einsetzen, wie z.B. anzahl*10,  anzahl / 10, &hellip;.</p>
 
-<pre><code>    if x&gt; screen.get_width() or x&lt;0:
-        stepx = stepx * (-1)
-    x = x+ stepx
-</code></pre>
+<h3 id="aufgabe-4-parameter-verwenden">Aufgabe 4: Parameter verwenden</h3>
+
+<p>Erweitere deine Programme aus den vorherigen Übungen so, dass zufällige Figuren gezeichnet werden.</p>
 
 
 <footer class=" footline" >
@@ -731,8 +773,221 @@ while running:
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -810,222 +1065,6 @@ while running:
             
             
                 
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1114,10 +1153,10 @@ while running:
 	 
 	 
 		
-			<a class="nav nav-prev" href="/python-mit-pygame/03_bilder_zeichnen/" title="Bilder zeichnen"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/python_mit_turtle/06_zufall/" title="Zufall"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/python-mit-pygame/05_mehr_infos/" title="Mehr Infos" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/python_textadventures/" title="Python - Textadventures" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
