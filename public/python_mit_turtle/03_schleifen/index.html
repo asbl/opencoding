@@ -12,20 +12,20 @@
     <title>Schleifen :: opencoding</title>
 
     
-    <link href="/css/nucleus.css?1570989452" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1570989452" rel="stylesheet">
-    <link href="/css/hybrid.css?1570989452" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1570989452" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1570989452" rel="stylesheet">
-    <link href="/css/auto-complete.css?1570989452" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1570989452" rel="stylesheet">
-    <link href="/css/theme.css?1570989452" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1570989452" rel="stylesheet">
+    <link href="/css/nucleus.css?1571080927" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1571080927" rel="stylesheet">
+    <link href="/css/hybrid.css?1571080927" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1571080927" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1571080927" rel="stylesheet">
+    <link href="/css/auto-complete.css?1571080927" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1571080927" rel="stylesheet">
+    <link href="/css/theme.css?1571080927" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1571080927" rel="stylesheet">
     
-      <link href="/css/theme-red.css?1570989452" rel="stylesheet">
+      <link href="/css/theme-red.css?1571080927" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1570989452"></script>
+    <script src="/js/jquery-3.3.1.min.js?1571080927"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1570989452"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1570989452"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1571080927"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1571080927"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/opencoding.de";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1570989452"></script>
+<script type="text/javascript" src="/js/search.js?1571080927"></script>
 
     
   </div>
@@ -646,8 +646,8 @@
 <li><a href="#aufgabe-2-1-schleifen">Aufgabe 2.1: Schleifen</a></li>
 <li><a href="#aufgabe-2-2-code-analysieren">Aufgabe 2.2: Code analysieren</a></li>
 <li><a href="#aufgabe-2-3-quadrate">Aufgabe 2.3: Quadrate</a></li>
-<li><a href="#aufgabe-2-4-pentragramm">Aufgabe 2.4: Pentragramm</a></li>
-<li><a href="#aufgabe-2-5-pentragramme">Aufgabe 2.5: Pentragramme</a></li>
+<li><a href="#aufgabe-2-4-pentagramm">Aufgabe 2.4: Pentagramm</a></li>
+<li><a href="#aufgabe-2-5-pentagramme">Aufgabe 2.5: Pentagramme</a></li>
 <li><a href="#aufgabe-2-6-stern">Aufgabe 2.6: Stern</a></li>
 <li><a href="#aufgabe-2-7-größer-werdende-rechtecke">Aufgabe 2.7: Größer werdende Rechtecke</a></li>
 </ul></li>
@@ -686,10 +686,25 @@
 <p>Meist ist es nicht sehr effizient die selben Anweisungen mehrfach zu schreiben.
 Im folgenden Programm siehst du, wie du etwas wiederholen kannst. Die Zeilen 3 und 4 sind eingerückt - dies ist wichtig- um dem Programm mitzuteilen, dass diese Zeilen innerhalb der Schleife wiederholt werden:</p>
 
-<p>import turtle
+<pre><code class="language-python">import turtle
 for i in range(4):
     turtle.forward(100)
-    turtle.right(90)</p>
+    turtle.right(90)
+</code></pre>
+
+<p>Grafisch kann man den Programmablauf in einem <strong>Flussdiagramm</strong> visualisieren:</p>
+
+
+<div class="mermaid" align="left">
+graph LR;
+    A["Start"] --> B("turtle.forward(100)")
+    B --> C("turtle.right(90)")
+    C --> D("Schleife beendet?")
+    D -->|Nein| A
+    D -->|Ja| E["Ende"]
+    E 
+</div>
+
 
 <h3 id="aufgabe-2-2-code-analysieren">Aufgabe 2.2: Code analysieren</h3>
 
@@ -732,13 +747,13 @@ for i in range(4):
 
 <p><img src="/python/quadrate.jpg" alt="Quadrate" /></p>
 
-<h3 id="aufgabe-2-4-pentragramm">Aufgabe 2.4: Pentragramm</h3>
+<h3 id="aufgabe-2-4-pentagramm">Aufgabe 2.4: Pentagramm</h3>
 
 <p>Zeichne folgendes Muster</p>
 
-<p>![Fünfzackiger Stern(/python/fuenfzackiger_stern.jpg)</p>
+<p><img src="/python/fuenfzackiger_stern.jpg" alt="Fünfzackiger Stern" /></p>
 
-<h3 id="aufgabe-2-5-pentragramme">Aufgabe 2.5: Pentragramme</h3>
+<h3 id="aufgabe-2-5-pentagramme">Aufgabe 2.5: Pentagramme</h3>
 
 <p>Zeichne folgendes Muster</p>
 
@@ -1186,19 +1201,19 @@ for i in range(4):
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1570989452"></script>
-    <script src="/js/perfect-scrollbar.min.js?1570989452"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1570989452"></script>
-    <script src="/js/jquery.sticky.js?1570989452"></script>
-    <script src="/js/featherlight.min.js?1570989452"></script>
-    <script src="/js/highlight.pack.js?1570989452"></script>
+    <script src="/js/clipboard.min.js?1571080927"></script>
+    <script src="/js/perfect-scrollbar.min.js?1571080927"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1571080927"></script>
+    <script src="/js/jquery.sticky.js?1571080927"></script>
+    <script src="/js/featherlight.min.js?1571080927"></script>
+    <script src="/js/highlight.pack.js?1571080927"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1570989452"></script>
-    <script src="/js/learn.js?1570989452"></script>
-    <script src="/js/hugo-learn.js?1570989452"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1571080927"></script>
+    <script src="/js/learn.js?1571080927"></script>
+    <script src="/js/hugo-learn.js?1571080927"></script>
 
-    <link href="/mermaid/mermaid.css?1570989452" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1570989452"></script>
+    <link href="/mermaid/mermaid.css?1571080927" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1571080927"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

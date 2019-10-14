@@ -11,11 +11,26 @@ weight: 3
 Meist ist es nicht sehr effizient die selben Anweisungen mehrfach zu schreiben. 
 Im folgenden Programm siehst du, wie du etwas wiederholen kannst. Die Zeilen 3 und 4 sind eingerückt - dies ist wichtig- um dem Programm mitzuteilen, dass diese Zeilen innerhalb der Schleife wiederholt werden:
 
-
+```python
 import turtle
 for i in range(4):
     turtle.forward(100)
     turtle.right(90)
+```
+
+Grafisch kann man den Programmablauf in einem **Flussdiagramm** visualisieren:
+
+{{<mermaid align="left">}}
+graph LR;
+    A["Start"] --> B("turtle.forward(100)")
+    B --> C("turtle.right(90)")
+    C --> D("Schleife beendet?")
+    D -->|Nein| A
+    D -->|Ja| E["Ende"]
+    E 
+{{< /mermaid >}}
+
+
 
 ### Aufgabe 2.2: Code analysieren
 
@@ -58,14 +73,14 @@ Zeichne das folgende Muster. Verwende für das Muster (So wie für alle folgende
 
 ![Quadrate](/python/quadrate.jpg)
 
-### Aufgabe 2.4: Pentragramm 
+### Aufgabe 2.4: Pentagramm 
 
 Zeichne folgendes Muster
 
-![Fünfzackiger Stern(/python/fuenfzackiger_stern.jpg)
+![Fünfzackiger Stern](/python/fuenfzackiger_stern.jpg)
 
 
-### Aufgabe 2.5: Pentragramme 
+### Aufgabe 2.5: Pentagramme 
 
 Zeichne folgendes Muster
 

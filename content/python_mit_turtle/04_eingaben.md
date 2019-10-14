@@ -10,22 +10,24 @@ weight: 4
 
 Führe das folgende Programm aus und beobachte, was passiert:
 
-
-
 <iframe height="400px" width="100%" src="https://repl.it/@a_siebel/input?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 a) Beschreibe, was das Programm macht
 
 b) Erkläre was die Zeilen 2 und 3 des Programmes tun.
 
-<details>
-<summary>--> Erklärung anzeigen</summary>
+{{%expand "Lösung anzeigen" %}}
 
 In Zeile 2 passieren 3 Dinge in folgender Reihenfolge:
-  1. Eine Benutzereingabe wird mit der Funktion input() gelesen.
-  2. Die Funktion int() wandelt die Benutzereingabe in eine Zahl um.
-  3. Die Benutzereingabe wird gespeichert (unter dem Namen x)
-</details>
+
+  1. Eine Benutzereingabe wird mit der Funktion **input() eingelesen**.
+   
+  2. Die Funktion **int()** **wandelt** die Benutzereingabe in eine **Zahl** um.
+   
+  3. Die umgewandelte Zahl wird gespeichert und ist über den **Namen x** zugreifbar.
+
+{{% /expand%}}
+
 
 ### Aufgabe 3.2: Stiftfarbe 
 

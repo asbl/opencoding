@@ -10,9 +10,6 @@ Wenn du größere Programme schreibst, ist es am einfachsten, wenn du diese in *
 
 In Python funktioniert dies mit Funktionen (oder auch Subroutinen). Das folgende Programm erstellt eine Funktion, um ein kleines Quadrat zu zeichnen. Anschließend wird die Funktion einmal aufgerufen:
 
-<details>
-<summary>--> Lösung anzeigen</summary>
-
 ```python
 import turtle
 def square():
@@ -22,13 +19,13 @@ def square():
 square()
 ```
 
-</details>
-
   * Das Schlüsselworts **def** steht für define. Mit diesem Schlüsselwort wird signalisiert, dass im folgenden eine Funktion definiert wird.
+  
   * Anschließend folgt der Name der Funktion. Diese Funktion heißt square, denn es soll ein Quadrat gezeichnet werden. Nach dem Funktionsnamen folgen zwei Klammern und ein Doppelpunkt.
+
   * Der Inhalt der Funktion ist eingerückt. Hier wird beschrieben, was bei Aufruf der Funktion passieren soll.
 
-Um die Funktion aufzurufen (engl: call subroutine) schreibt man den Namen der Funktion gefolgt von den beiden Klammern im Programm auf.
+Um die Funktion aufzurufen schreibt man den Namen der Funktion gefolgt von den beiden Klammern im Programm auf.
 
 **Aufgabe:**
 

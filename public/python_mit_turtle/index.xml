@@ -37,8 +37,7 @@ Thonny Installiere Thonny auf deinem Rechner-. Manchmal kann Thonny auf den Rech
       
       <guid>https://opencoding.de/python_mit_turtle/03_schleifen/</guid>
       <description>Lektion 2: Schleifen Aufgabe 2.1: Schleifen Meist ist es nicht sehr effizient die selben Anweisungen mehrfach zu schreiben. Im folgenden Programm siehst du, wie du etwas wiederholen kannst. Die Zeilen 3 und 4 sind eingerückt - dies ist wichtig- um dem Programm mitzuteilen, dass diese Zeilen innerhalb der Schleife wiederholt werden:
-import turtle for i in range(4): turtle.forward(100) turtle.right(90)
-Aufgabe 2.2: Code analysieren Schau dir folgendes Programm an und überlege was es tut.</description>
+import turtle for i in range(4): turtle.forward(100) turtle.right(90)  Grafisch kann man den Programmablauf in einem Flussdiagramm visualisieren:</description>
     </item>
     
     <item>
@@ -50,8 +49,10 @@ Aufgabe 2.2: Code analysieren Schau dir folgendes Programm an und überlege was 
       <description>Lektion 3: Benutzereingaben Aufgabe 3.1 Führe das folgende Programm aus und beobachte, was passiert:
  a) Beschreibe, was das Programm macht
 b) Erkläre was die Zeilen 2 und 3 des Programmes tun.
- &amp;ndash;&amp;gt; Erklärung anzeigen
-In Zeile 2 passieren 3 Dinge in folgender Reihenfolge: 1. Eine Benutzereingabe wird mit der Funktion input() gelesen. 2. Die Funktion int() wandelt die Benutzereingabe in eine Zahl um. 3. Die Benutzereingabe wird gespeichert (unter dem Namen x)</description>
+  Lösung anzeigen   In Zeile 2 passieren 3 Dinge in folgender Reihenfolge:
+ Eine Benutzereingabe wird mit der Funktion input() eingelesen.
+ Die Funktion int() wandelt die Benutzereingabe in eine Zahl um.
+ Die umgewandelte Zahl wird gespeichert und ist über den Namen x zugreifbar.</description>
     </item>
     
     <item>
@@ -62,9 +63,7 @@ In Zeile 2 passieren 3 Dinge in folgender Reihenfolge: 1. Eine Benutzereingabe w
       <guid>https://opencoding.de/python_mit_turtle/05_funktionen/</guid>
       <description>Aufgabe 1 Wenn du größere Programme schreibst, ist es am einfachsten, wenn du diese in Teilprogramme zerlegen kannst.
 In Python funktioniert dies mit Funktionen (oder auch Subroutinen). Das folgende Programm erstellt eine Funktion, um ein kleines Quadrat zu zeichnen. Anschließend wird die Funktion einmal aufgerufen:
- &amp;ndash;&amp;gt; Lösung anzeigen
-import turtle def square(): for i in range(4): turtle.forward(30) turtle.right(90) square()  
- Das Schlüsselworts def steht für define. Mit diesem Schlüsselwort wird signalisiert, dass im folgenden eine Funktion definiert wird.</description>
+import turtle def square(): for i in range(4): turtle.forward(30) turtle.right(90) square()   Das Schlüsselworts def steht für define. Mit diesem Schlüsselwort wird signalisiert, dass im folgenden eine Funktion definiert wird.</description>
     </item>
     
     <item>

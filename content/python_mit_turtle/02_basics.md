@@ -30,13 +30,13 @@ Ein erster Code kann folgendermaßen aussehen:
 <iframe height="400px" width="100%" src="https://repl.it/@a_siebel/First-example?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 
-### Aufgabe 1.2: Zeichne ein Quadrat mit roter Stiftfarbe 
+### Aufgabe 1.1: Zeichne ein Quadrat mit roter Stiftfarbe 
 
 Zeichne ein Quadrat mit roter Stiftfarbe wie im folgenden Beispiel:
 
 ![Beispiel 1](/python/1.jpg)
 
-{{%expand "--> Lösung anzeigen" %}}
+{{%expand "Lösung anzeigen" %}}
 
 ```python
 import turtle
@@ -56,9 +56,9 @@ turtle.end_fill()
 
 
 
-### Aufgabe 1.3: Zeichne ein Quadrat (2) 
+### Aufgabe 1.2: Zeichne ein Quadrat (2) 
 
-Zeichne ein Quadrat mit den Seitenlängen 180 mit einer lila ("purple") Linie und blauer ("blue) Füllungimport turtle
+Zeichne ein Quadrat mit den Seitenlängen 180 mit einer lila ("purple") Linie und blauer ("blue) Füllung.
 
 ![Beispiel 2](/python/2.jpg)
 
@@ -80,7 +80,7 @@ turtle.end_fill()
 ```
 {{% /expand%}}
 
-### Aufgabe 1.4: Zeichne ein Rechteck 
+### Aufgabe 1.3: Zeichne ein Rechteck 
 
 Zeichne ein Rechteck:
 
@@ -101,16 +101,16 @@ turtle.forward (80)
 ```
 {{% /expand%}}
 
-###  Aufgabe 1.5: Zeichne zwei Rechtecke
+###  Aufgabe 1.4: Zeichne zwei Rechtecke
 
 Ergänze Aufgabe 4 um ein zweites Rechteck, dass angezeigt werden soll. Die Rechtecke sollen sich nicht berühren. 
-Verwende dafür pen up & pen down.
+Verwende dafür die Funktionen penup & pendown (siehe oben).
 
 
 ![Beispiel 4](/python/4.jpg)
 
 
-{{%expand "--> Lösung anzeigen" %}}
+{{%expand "Lösung anzeigen" %}}
 ```python
 import turtle
 # Erstes Rechteck
@@ -144,7 +144,7 @@ Zeichne ein Dreieck
 ![Beispiel 5](/python/5.jpg)
 
 
-{{%expand "--> Lösung anzeigen" %}}
+{{%expand "Lösung anzeigen" %}}
 ```python
 import turtle
 import turtle
@@ -166,7 +166,11 @@ Zeichne mindestens zwei der folgenden Figuren:
   * Regelmäßiges Achteck
   * Regelmäßiges Zwölfeck
 
+###
 
+Die Übungen basieren auf Arbeitsblättern von James Watts - zu finden auf der Seite von computing at school: https://community.computingatschool.org.uk/resources/2851/single . 
+
+Sie sind zugänglich unter https://creativecommons.org/licenses/by-sa/3.0/ - Lizenz
 
 
 
