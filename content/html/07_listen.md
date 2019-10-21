@@ -58,11 +58,8 @@ Definitionslisten werden mit dem Tag `<dl>` umschlossen.
 Beispiel:
 
 ```html
-
 <dl>
-
   <dt>DNS</dt> <dd>Domain Name Service</dd> 
-
   <dt>IP</dt> <dd>Internet Protocoll</dd>
 </dl>
 
