@@ -6,7 +6,7 @@ weight: 7
 
 ## Arbeitsauftrag
 
-Erstelle verschiedene Arten von Listen in deinem Dokument
+Erstelle verschiedene Arten von Listen in deinem Dokument.
 
 ## Syntax
 
@@ -58,8 +58,12 @@ Definitionslisten werden mit dem Tag `<dl>` umschlossen.
 Beispiel:
 
 ```html
-<dl> 
+
+<dl>
+
   <dt>DNS</dt> <dd>Domain Name Service</dd> 
+
   <dt>IP</dt> <dd>Internet Protocoll</dd>
 </dl>
-``
+
+```
