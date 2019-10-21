@@ -83,6 +83,22 @@ Syntax Tabellen können in html mit folgender Syntax erstellt werden:
     </item>
     
     <item>
+      <title>Listen</title>
+      <link>https://opencoding.de/html/07_listen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/07_listen/</guid>
+      <description>Arbeitsauftrag Erstelle verschiedene Arten von Listen in deinem Dokument
+Syntax Listen können ähnlich wie Tabellen erstellt werden:
+Syntax Ungeordnete Listen: &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;Unterpunkt 1&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Unterpunkt 2&amp;lt;/li&amp;gt; &amp;lt;ul&amp;gt;  &amp;hellip; wird zu:
+ Unterpunkt 1 Unterpunkt 2 
+Nummerierte Listen &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;Unterpunkt 1&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Unterpunkt 2&amp;lt;/li&amp;gt; &amp;lt;ol&amp;gt;  &amp;hellip; wird zu:
+ Unterpunkt 1 Unterpunkt 2 
+Definitionslisten: Weiterhin gibt es noch Definitionslisten z.B. für Listen von Abkürzungen oder Vokabeln:
+Definitionslisten werden mit dem Tag &amp;lt;dl&amp;gt; umschlossen.</description>
+    </item>
+    
+    <item>
       <title>Absolute und relative Verweise</title>
       <link>https://opencoding.de/html/absolute_relative_verweise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

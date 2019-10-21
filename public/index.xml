@@ -317,6 +317,35 @@ Betrachte dazu folgendes Programm (Hinweis: Zeilen, die mit # beginnen sind Komm
     </item>
     
     <item>
+      <title>Listen</title>
+      <link>https://opencoding.de/html/07_listen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/07_listen/</guid>
+      <description>Arbeitsauftrag Erstelle verschiedene Arten von Listen in deinem Dokument
+Syntax Listen können ähnlich wie Tabellen erstellt werden:
+Syntax Ungeordnete Listen: &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;Unterpunkt 1&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Unterpunkt 2&amp;lt;/li&amp;gt; &amp;lt;ul&amp;gt;  &amp;hellip; wird zu:
+ Unterpunkt 1 Unterpunkt 2 
+Nummerierte Listen &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;Unterpunkt 1&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Unterpunkt 2&amp;lt;/li&amp;gt; &amp;lt;ol&amp;gt;  &amp;hellip; wird zu:
+ Unterpunkt 1 Unterpunkt 2 
+Definitionslisten: Weiterhin gibt es noch Definitionslisten z.B. für Listen von Abkürzungen oder Vokabeln:
+Definitionslisten werden mit dem Tag &amp;lt;dl&amp;gt; umschlossen.</description>
+    </item>
+    
+    <item>
+      <title>Zufallsmuster</title>
+      <link>https://opencoding.de/python_mit_turtle/07_zufallsmuster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_mit_turtle/07_zufallsmuster/</guid>
+      <description>Aufgabe 1: Grundsätzliche Überlegungen Das folgende Programm erstellt eine Form:
+import turtle def shape(): for i in range(4): turtle.forward(50) turtle.right(90) shape()  Beantworte folgende Fragen, passe das Programm dafür an:
+ Wie müsste man das Programm verändern, wenn man eine dreiseitige Figur erstellen möchte?
+ Wie müsste man das Programm verändern, wenn man eine fünfseitige Figur erstellen möchte?
+ Was ist die Beziehung zwischen Seitenanzahl und Winkel, den die Turtle zeichnen muss.</description>
+    </item>
+    
+    <item>
       <title>Absolute und relative Verweise</title>
       <link>https://opencoding.de/html/absolute_relative_verweise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -335,19 +364,6 @@ Ein absoluter Verweis gibt die volle Adresse einer Ressource an (bei einem Hyper
       <description>Eines der grundlegenden Prinzipien bei der Gestaltung von Texten ist die *Trennung von Struktur, Layout und Inhalt
 Dies hat folgende Vorteile:
  Du kannst den selben Text mit einem anderen Layout für unterschiedliche Medien gestalten (Buch, Handy, Bildschirme unterschiedlicher Breite) Wenn gemeinsam Texte geschrieben werden, können die Inhalte leicht von einer Person wieder zusammengefügt werden. Durch die Trennung von Layout, Struktur und Inhalt wird ein Text barrierefrei. Jemand der blind ist, kann sich deinen Text nicht anschauen, aber um Beispiel vorlesen lassen.</description>
-    </item>
-    
-    <item>
-      <title>Zufallsmuster</title>
-      <link>https://opencoding.de/python_mit_turtle/07_zufallsmuster/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opencoding.de/python_mit_turtle/07_zufallsmuster/</guid>
-      <description>Aufgabe 1: Grundsätzliche Überlegungen Das folgende Programm erstellt eine Form:
-import turtle def shape(): for i in range(4): turtle.forward(50) turtle.right(90) shape()  Beantworte folgende Fragen, passe das Programm dafür an:
- Wie müsste man das Programm verändern, wenn man eine dreiseitige Figur erstellen möchte?
- Wie müsste man das Programm verändern, wenn man eine fünfseitige Figur erstellen möchte?
- Was ist die Beziehung zwischen Seitenanzahl und Winkel, den die Turtle zeichnen muss.</description>
     </item>
     
     <item>

@@ -1,6 +1,6 @@
 ---
 title: Trennung von Layout und Inhalt
-weight: 7
+weight: 102
 ---
 
 Eines der grundlegenden Prinzipien bei der Gestaltung von Texten ist die ***Trennung von Struktur, Layout und Inhalt**

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Die Mainloop :: opencoding</title>
+    <title>Listen :: opencoding</title>
 
     
     <link href="/css/nucleus.css?1571654822" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/python-mit-pygame/02_mainloop/">
+  <body class="" data-url="/html/07_listen/">
     <nav id="sidebar" class="">
 
 
@@ -370,7 +370,7 @@
   
     
     <li data-nav-id="/python-mit-pygame/" title="Computergrafik mit Pygame" class="dd-item 
-        parent
+        
         
         
         ">
@@ -413,7 +413,7 @@
  
   
     
-      <li data-nav-id="/python-mit-pygame/02_mainloop/" title="Die Mainloop" class="dd-item active">
+      <li data-nav-id="/python-mit-pygame/02_mainloop/" title="Die Mainloop" class="dd-item ">
         <a href="/python-mit-pygame/02_mainloop/">
         <b>2. </b>Die Mainloop
         
@@ -586,7 +586,7 @@
   
     
     <li data-nav-id="/html/" title="HTML" class="dd-item 
-        
+        parent
         
         
         ">
@@ -724,7 +724,7 @@
  
   
     
-      <li data-nav-id="/html/07_listen/" title="Listen" class="dd-item ">
+      <li data-nav-id="/html/07_listen/" title="Listen" class="dd-item active">
         <a href="/html/07_listen/">
         <b>7. </b>Listen
         
@@ -846,7 +846,7 @@
             
           
           
-            <a href='/'></a> > <a href='/python-mit-pygame/'>Computergrafik mit Pygame</a> > Die Mainloop
+            <a href='/'></a> > <a href='/html/'>HTML</a> > Listen
           
          
           
@@ -859,7 +859,21 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#arbeitsauftrag">Arbeitsauftrag</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#syntax-1">Syntax</a>
+<ul>
+<li><a href="#ungeordnete-listen">Ungeordnete Listen:</a></li>
+<li><a href="#nummerierte-listen">Nummerierte Listen</a></li>
+</ul></li>
+<li><a href="#definitionslisten">Definitionslisten:</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -875,7 +889,7 @@
           
             <h1>
               
-              Die Mainloop
+              Listen
             </h1>
           
 
@@ -883,18 +897,68 @@
 
 
 
-<p>Nun brauchst du eine Mainloop, d.h. eine Schleife die ständig läuft, bis die Zustandsvariable <strong>running</strong> den Wert <strong>False</strong> annimmt (z.B. wenn der Benutzer auf das x-Symbol des Fensters klickt.)</p>
 
-<p>Ergänze dazu folgenden Code:</p>
 
-<pre><code class="language-python">running = True
-     
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
+<h2 id="arbeitsauftrag">Arbeitsauftrag</h2>
 
+<p>Erstelle verschiedene Arten von Listen in deinem Dokument</p>
+
+<h2 id="syntax">Syntax</h2>
+
+<p>Listen können ähnlich wie Tabellen erstellt werden:</p>
+
+<h2 id="syntax-1">Syntax</h2>
+
+<h3 id="ungeordnete-listen">Ungeordnete Listen:</h3>
+
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;Unterpunkt 1&lt;/li&gt;
+    &lt;li&gt;Unterpunkt 2&lt;/li&gt;
+&lt;ul&gt;
 </code></pre>
+
+<p>&hellip; wird zu:</p>
+
+<p><ul>
+    <li>Unterpunkt 1</li>
+    <li>Unterpunkt 2</li>
+<ul></p>
+
+<h3 id="nummerierte-listen">Nummerierte Listen</h3>
+
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;Unterpunkt 1&lt;/li&gt;
+    &lt;li&gt;Unterpunkt 2&lt;/li&gt;
+&lt;ol&gt;
+</code></pre>
+
+<p>&hellip; wird zu:</p>
+
+<p><ol>
+    <li>Unterpunkt 1</li>
+    <li>Unterpunkt 2</li>
+<ol></p>
+
+<h2 id="definitionslisten">Definitionslisten:</h2>
+
+<p>Weiterhin gibt es noch Definitionslisten z.B. für Listen von Abkürzungen oder Vokabeln:</p>
+
+<p>Definitionslisten werden mit dem Tag <code>&lt;dl&gt;</code> umschlossen.</p>
+
+<ul>
+<li><p><code>&lt;dt&gt;</code> Bezeichnet den Term der Beschrieben werden soll</p></li>
+
+<li><p><code>&lt;dd&gt;</code> Bezeichnet die Beschreibung des Terms.</p></li>
+</ul>
+
+<p>Beispiel:</p>
+
+<p>`<code>html
+&lt;dl&gt; 
+  &lt;dt&gt;DNS&lt;/dt&gt; &lt;dd&gt;Domain Name Service&lt;/dd&gt; 
+  &lt;dt&gt;IP&lt;/dt&gt; &lt;dd&gt;Internet Protocoll&lt;/dd&gt;
+&lt;/dl&gt;
+</code></p>
 
 
 <footer class=" footline" >
@@ -1160,7 +1224,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1173,26 +1236,6 @@
             
             
                 
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1210,8 +1253,21 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -1328,6 +1384,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1340,6 +1397,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1437,6 +1497,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1452,6 +1513,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1492,10 +1556,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/python-mit-pygame/01_erste_schritte/" title="Erste Schritte"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/html/06_tabellen/" title="Tabellen"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/python-mit-pygame/03_bilder_zeichnen/" title="Bilder zeichnen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/html/absolute_relative_verweise/" title="Absolute und relative Verweise" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

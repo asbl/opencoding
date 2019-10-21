@@ -40,3 +40,9 @@ Beachte bei Bildern immer das Urheberrecht:
 * Mehr Infos: https://wiki.selfhtml.org/wiki/HTML/Multimedia_und_Grafiken/Grafiken 
 
 * Zum Einbinden von Videos und kann man das Video verwenden: https://wiki.selfhtml.org/wiki/HTML/Multimedia_und_Grafiken/video 
+
+### Bilder in repl.it
+
+In repl.it kannst du Bilder  mit **Drag & Drop** hinzufügen. Ziehe dazu eine Datei von deinem Desktop in den linken Bereich deines repls, bis sich der Mauszeiger verändert.
+
+Anschließend kannst du auf das Bild so wie oben beschrieben verlinken.

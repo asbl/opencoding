@@ -54,3 +54,5 @@ Daher verwendet man bei der HTML-Programmierung fast immer Pfade, die **relativ 
 ### Interne Links in repl.it
 
 In repl.it kannst du Dateien mit **Drag & Drop** hinzufügen. Ziehe dazu eine Datei von deinem Desktop in den linken Bereich deines repls, bis sich der Mauszeiger verändert.
+
+Anschließend kannst du auf die Datei verlinken.
