@@ -39,10 +39,10 @@ Syntax Verwende dabei folgende Tags:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://opencoding.de/html/03_attribute/</guid>
-      <description>Arbeitsauftrag Einige Tags können durch zusätzliche Informationen innerhalb des Tags ergänzt werden. Man nennt diese Informationen Attribute.
+      <description>Arbeitsauftrag Einige Tags können durch zusätzliche Informationen innerhalb des Tags ergänzt werden. Man nennt diese Informationen Attribute. Füge in deinem Dokument zu einem oder mehreren Tags geeignete Attribute hinzu.
 Syntax &amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;Inhalt&amp;lt;/p&amp;gt;  Dies ordnet den Inhalt rechtsbündig an (Alternativen: right | left | center)
 Mehr über Attribute  Hier findest du viele weitere Attribute: https://developer.mozilla.org/de/docs/Web/HTML/Attributes
- Es ist zwar möglich mit Attributen dein Dokument zu layouten (z.B. über color, bgcolor, width, height, …). Wir werden dies aber über spezielle Layout-Dateien (css) machen.</description>
+ Es ist zwar möglich mit Attributen dein Dokument zu layouten (z.B. über color, bgcolor, width, height, …).</description>
     </item>
     
     <item>
