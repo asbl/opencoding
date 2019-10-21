@@ -43,4 +43,12 @@ Von dieser Regel gibt es einige Ausnahmen. Wenn ein Tag keinen Inhalt hat, dann 
 
 Auf diese Weise ergibt sich die Struktur des Dokuments:
 
-![1571578761505](/html/htmlstruktur.png)
+![Struktur eines HTML Dokuments](/html/htmlstruktur.png)
+
+### repl.it
+
+Du kannst deine HTML-Datei auch in [repl.it] bearbeiten. Melde dich dazu auf der Plattform an und erstelle ein neues "HTML+CSS+JS"-repl
+
+![Ein neues repl erstellen](/html/newrepl.png)
+
+In diesem Fall musst das HTML Grundgerüst nicht mehr kopieren, sondern kannst das von repl.it vorgegebene Gerüst verwenden.

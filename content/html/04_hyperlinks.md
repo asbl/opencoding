@@ -1,12 +1,16 @@
 ---
 title: Hyperlinks
 pre: "<b>4. </b>"
-weight: 1
+weight: 4
 ---
 
 ## Arbeitsauftrag
 
-Erstelle in deinem Dokument einen Hyperlink.
+Erstelle in deinem Dokument einen Hyperlink zu ...
+  
+  * Einer fremden Webseite
+  * Einer anderen HTML-Datei im selben Ordner, die du selbst angelegt hast.
+  * Einer Datei in einem Unterordner deiner HTML-Datei
 
 ## Syntax
 

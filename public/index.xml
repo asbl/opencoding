@@ -59,20 +59,6 @@ Mehr Infos über HTML Ein HTML-Dokument ist folgendermaßen aufgebaut:
     </item>
     
     <item>
-      <title>Hyperlinks</title>
-      <link>https://opencoding.de/html/04_hyperlinks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opencoding.de/html/04_hyperlinks/</guid>
-      <description>Arbeitsauftrag Erstelle in deinem Dokument einen Hyperlink.
-Syntax Ein Hyperlink wird folgender Syntax erstellt:
-&amp;lt;a href=“[Url]“&amp;gt;Name des Links&amp;lt;/a&amp;gt;  Die [URL] kann dabei sowohl auf eine andere Webseite verweisen als auch auf eine Datei relativ zum eigenen Pfad.
-Beispiele:
-&amp;lt;a href=“http://www.cws-usingen.de“&amp;gt;CWS Usingen&amp;lt;/a&amp;gt; &amp;lt;a href=“impressum.html“&amp;gt;Impressum&amp;lt;/a&amp;gt; &amp;lt;a href=“unterordner/impressum.html“&amp;gt;Impressum&amp;lt;/a&amp;gt;  Theorie Hyperlinks Angenommen du hast eine Datei c:\mein-ordner\index.html. Du kannst die html-Datei bearbeiten, indem du einen Link erstellst in der Form:
-&amp;lt;a href=“c:\mein-ordner\index.</description>
-    </item>
-    
-    <item>
       <title>Impressum</title>
       <link>https://opencoding.de/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -248,6 +234,19 @@ b) Erkläre was die Zeilen 2 und 3 des Programmes tun.
  Eine Benutzereingabe wird mit der Funktion input() eingelesen.
  Die Funktion int() wandelt die Benutzereingabe in eine Zahl um.
  Die umgewandelte Zahl wird gespeichert und ist über den Namen x zugreifbar.</description>
+    </item>
+    
+    <item>
+      <title>Hyperlinks</title>
+      <link>https://opencoding.de/html/04_hyperlinks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/04_hyperlinks/</guid>
+      <description>Arbeitsauftrag Erstelle in deinem Dokument einen Hyperlink zu &amp;hellip;
+ Einer fremden Webseite Einer anderen HTML-Datei im selben Ordner, die du selbst angelegt hast. Einer Datei in einem Unterordner deiner HTML-Datei  Syntax Ein Hyperlink wird folgender Syntax erstellt:
+&amp;lt;a href=“[Url]“&amp;gt;Name des Links&amp;lt;/a&amp;gt;  Die [URL] kann dabei sowohl auf eine andere Webseite verweisen als auch auf eine Datei relativ zum eigenen Pfad.
+Beispiele:
+&amp;lt;a href=“http://www.cws-usingen.de“&amp;gt;CWS Usingen&amp;lt;/a&amp;gt; &amp;lt;a href=“impressum.html“&amp;gt;Impressum&amp;lt;/a&amp;gt; &amp;lt;a href=“unterordner/impressum.</description>
     </item>
     
     <item>
