@@ -19,7 +19,7 @@ Listen können ähnlich wie Tabellen erstellt werden:
 <ul>
     <li>Unterpunkt 1</li>
     <li>Unterpunkt 2</li>
-<ul>
+</ul>
 ```
 
 ... wird zu:
@@ -27,7 +27,7 @@ Listen können ähnlich wie Tabellen erstellt werden:
 <ul>
     <li>Unterpunkt 1</li>
     <li>Unterpunkt 2</li>
-<ul>
+</ul>
 
 ### Nummerierte Listen
 
@@ -35,7 +35,7 @@ Listen können ähnlich wie Tabellen erstellt werden:
 <ol>
     <li>Unterpunkt 1</li>
     <li>Unterpunkt 2</li>
-<ol>
+</ol>
 ```
 
 ... wird zu:
@@ -43,7 +43,7 @@ Listen können ähnlich wie Tabellen erstellt werden:
 <ol>
     <li>Unterpunkt 1</li>
     <li>Unterpunkt 2</li>
-<ol>
+</ol>
 
 ## Definitionslisten:
 
