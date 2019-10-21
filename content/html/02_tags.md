@@ -33,9 +33,10 @@ umbruch
 
 ## Mehr Infos über Tags
 
-* Mehr Tags findest du hier: https://www.html-seminar.de/befehlsuebersicht.htm
+* **Mehr Tags** findest du hier: https://www.html-seminar.de/befehlsuebersicht.htm
 
 * Auf der Seite [https://wiki.selfhtml.org](https://wiki.selfhtml.org/) findest du alle Informationen über HTML und CSS.
-* Links, Listen, Tabellen und Bereiche (`<div>`) werden in den folgenden Karten beschrieben.
 
-* Es ist noch nicht notwendig, Farben und ähnliches zu definieren. Das Layout eines Dokumentes werden wir später mit Layout-Dateien (css) festlegen.
+* Links, Listen, Tabellen und Bereiche (`<div>`) werden auf den folgenden Seiten beschrieben.
+
+* Es ist noch nicht notwendig, Farben und ähnliches zu definieren. Das Layout eines Dokumentes werden wir später mit Layout-Dateien (css) festlegen. Siehe dazu auch [Trennung von Layout und Inhalt](./layout_struktur_inhalt/)

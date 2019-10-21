@@ -24,4 +24,4 @@ Dies ordnet den Inhalt rechtsbündig an (Alternativen: **right** | **left** | **
 
   * Es ist zwar möglich mit Attributen dein Dokument zu layouten (z.B. über color, bgcolor, width, height, …). Wir werden dies aber über spezielle Layout-Dateien (css) machen. Beachte immer das wichtige Grundprinzip: [Trennung von Layout und Inhalt](./layout_struktur_inhalt/)
 
-  * Wichtig für das Stylen sind insbesondere das class – Attribut mit dem man mehrere Objekte gleichzeitig gestalten kann sowie das id – Attribut. Das id- Attribut dient dazu einem Element eine eindeutige ID zu geben, damit z.B. eine Überschrift von allen anderen Überschriften unterschieden werden kann.
+  * Wichtig für das Layout sind später die Attribute **class** und **id**. Mit diesen Attributen können Teile deines Dokuments identifiziert werden.
