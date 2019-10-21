@@ -5,30 +5,12 @@ weight: 1
 ---
 
 
-### Operationen 
-
-| Befehl                    | Beschreibung                                             |
-| ------------------------- | -------------------------------------------------------- |
-| turtle.forward()          | Gehe vorwärts                                            |
-| turtle.backward()         | Gehe rückwärts                                           |
-| turtle.right(x)           | Drehe dich um x Grad nach rechts                         |
-| turtle.left(x)            | Drehe dich um x Grad nach links                          |
-| turtle.penup()            | Hebe den Stift an (Bewege dich weiter, ohne zu zeichnen) |
-| turtle.pendown()          | Setzt den Stift wieder ab, so dass du weiterzeichnest    |
-| turtle.fillcolor("brown") | Ändert die Füllfarbe auf Braun                           |
-| turtle.pencolor("red")    | Ändert die Stiftfarbe auf rot                            |
-| turtle.begin_fill()       | Beginnt die Figur zu füllen                              |
-| turtle.end_fill()         | Beendet das Füllen                                       |
-
-
-
 ### Grundlagen
 
 
 Ein erster Code kann folgendermaßen aussehen:
 
 <iframe height="400px" width="100%" src="https://repl.it/@a_siebel/First-example?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
 
 ### Aufgabe 1.1: Zeichne ein Quadrat mit roter Stiftfarbe 
 
@@ -165,12 +147,4 @@ Zeichne mindestens zwei der folgenden Figuren:
   * Regelmäßíges Sechseck
   * Regelmäßiges Achteck
   * Regelmäßiges Zwölfeck
-
-###
-
-Die Übungen basieren auf Arbeitsblättern von James Watts - zu finden auf der Seite von computing at school: https://community.computingatschool.org.uk/resources/2851/single . 
-
-Sie sind zugänglich unter https://creativecommons.org/licenses/by-sa/3.0/ - Lizenz
-
-
 

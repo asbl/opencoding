@@ -22,12 +22,24 @@ Thonny Installiere Thonny auf deinem Rechner-. Manchmal kann Thonny auf den Rech
     </item>
     
     <item>
+      <title>Operationen</title>
+      <link>https://opencoding.de/python_mit_turtle/00_operationen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/python_mit_turtle/00_operationen/</guid>
+      <description>Du benötigst folgende Operationen. Kehre hierhin zurück, wenn du vergessen hast, wie du die turtle steuern kannst.
+   Befehl Beschreibung     turtle.forward() Gehe vorwärts   turtle.backward() Gehe rückwärts   turtle.right(x) Drehe dich um x Grad nach rechts   turtle.left(x) Drehe dich um x Grad nach links   turtle.penup() Hebe den Stift an (Bewege dich weiter, ohne zu zeichnen)   turtle.pendown() Setzt den Stift wieder ab, so dass du weiterzeichnest   turtle.</description>
+    </item>
+    
+    <item>
       <title>Python Basics</title>
       <link>https://opencoding.de/python_mit_turtle/02_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://opencoding.de/python_mit_turtle/02_basics/</guid>
-      <description>Operationen    Befehl Beschreibung     turtle.forward() Gehe vorwärts   turtle.backward() Gehe rückwärts   turtle.right(x) Drehe dich um x Grad nach rechts   turtle.left(x) Drehe dich um x Grad nach links   turtle.penup() Hebe den Stift an (Bewege dich weiter, ohne zu zeichnen)   turtle.pendown() Setzt den Stift wieder ab, so dass du weiterzeichnest   turtle.fillcolor(&amp;ldquo;brown&amp;rdquo;) Ändert die Füllfarbe auf Braun   turtle.</description>
+      <description>Grundlagen Ein erster Code kann folgendermaßen aussehen:
+ Aufgabe 1.1: Zeichne ein Quadrat mit roter Stiftfarbe Zeichne ein Quadrat mit roter Stiftfarbe wie im folgenden Beispiel:
+  Lösung anzeigen   import turtle turtle.fillcolor(“Brown”) turtle.begin_fill() turtle.pencolor(“Red”) turtle.forward (100) turtle.right (90) turtle.forward (100) turtle.right (90) turtle.forward (100) turtle.right (90) turtle.forward (100) turtle.end_fill()    Aufgabe 1.2: Zeichne ein Quadrat (2) Zeichne ein Quadrat mit den Seitenlängen 180 mit einer lila (&amp;ldquo;purple&amp;rdquo;) Linie und blauer (&amp;ldquo;blue) Füllung.</description>
     </item>
     
     <item>

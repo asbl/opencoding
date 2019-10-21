@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on opencoding</title>
+    <link>https://opencoding.de/html/</link>
+    <description>Recent content in HTML on opencoding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    
+	<atom:link href="https://opencoding.de/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML Grundgerüst</title>
+      <link>https://opencoding.de/html/01_html_grundgeruest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/01_html_grundgeruest/</guid>
+      <description>Arbeitsauftrag Lege eine Datei index.html mit folgendem Inhalt an:
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;de&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Titel der Einzelseite&amp;lt;/title&amp;gt; &amp;lt;link href=&amp;quot;style.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  Hinweis für Windows-Benutzer Wenn du die Endung .html der Datei nicht ändern kannst, musst du die Windows-Option „Bekannte Dateiendungen ausblenden“ deaktivieren.
+Mehr Infos über HTML Ein HTML-Dokument ist folgendermaßen aufgebaut:
+ Tags, enthalten Inhalte oder andere Tags. Ein Tag wird mit spitzen Klammern beschrieben, z.</description>
+    </item>
+    
+    <item>
+      <title>Hyperlinks</title>
+      <link>https://opencoding.de/html/04_hyperlinks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/04_hyperlinks/</guid>
+      <description>Arbeitsauftrag Erstelle in deinem Dokument einen Hyperlink.
+Syntax Ein Hyperlink wird folgender Syntax erstellt:
+&amp;lt;a href=“[Url]“&amp;gt;Name des Links&amp;lt;/a&amp;gt;  Die [URL] kann dabei sowohl auf eine andere Webseite verweisen als auch auf eine Datei relativ zum eigenen Pfad.
+Beispiele:
+&amp;lt;a href=“http://www.cws-usingen.de“&amp;gt;CWS Usingen&amp;lt;/a&amp;gt; &amp;lt;a href=“impressum.html“&amp;gt;Impressum&amp;lt;/a&amp;gt; &amp;lt;a href=“unterordner/impressum.html“&amp;gt;Impressum&amp;lt;/a&amp;gt;  Theorie Hyperlinks Angenommen du hast eine Datei c:\mein-ordner\index.html. Du kannst die html-Datei bearbeiten, indem du einen Link erstellst in der Form:
+&amp;lt;a href=“c:\mein-ordner\index.</description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://opencoding.de/html/02_tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/02_tags/</guid>
+      <description>Arbeitsauftrag Schreibe jetzt erste Inhalte zwischen &amp;lt;body&amp;gt;und &amp;lt;/body&amp;gt; und gestalte die Inhalte mit Tags.
+Syntax Verwende dabei folgende Tags:
+&amp;lt;h1&amp;gt; Überschrift Ebene 1 &amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt; Überschrift Ebene 2 &amp;lt;/h2&amp;gt; ... &amp;lt;h3&amp;gt; Überschrift Ebene 3 &amp;lt;/h3&amp;gt; Ein Zeilen&amp;lt;br/&amp;gt; umbruch &amp;lt;p&amp;gt; Umschließe Absätze mit p Tags &amp;lt;/p&amp;gt; &amp;lt;b&amp;gt;fett&amp;lt;/b&amp;gt; &amp;lt;i&amp;gt;kursiv&amp;lt;/i&amp;gt; &amp;lt;u&amp;gt;Unterstrichen&amp;lt;/u&amp;gt; &amp;lt;!--Kommentar Kommentare werden nicht im Dokument angezeigt. Sie dienen dir beim Schreiben als Hilfe--&amp;gt;  Mehr Infos über Tags  Mehr Tags findest du hier: https://www.</description>
+    </item>
+    
+    <item>
+      <title>Attribute</title>
+      <link>https://opencoding.de/html/03_attribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/03_attribute/</guid>
+      <description>Arbeitsauftrag Einige Tags können durch zusätzliche Informationen innerhalb des Tags ergänzt werden. Man nennt diese Informationen Attribute.
+Syntax &amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;Inhalt&amp;lt;/p&amp;gt;  Dies ordnet den Inhalt rechtsbündig an (Alternativen: right | left | center)
+Mehr über Attribute  Hier findest du viele weitere Attribute: https://developer.mozilla.org/de/docs/Web/HTML/Attributes
+ Es ist zwar möglich mit Attributen dein Dokument zu layouten (z.B. über color, bgcolor, width, height, …). Wir werden dies aber über spezielle Layout-Dateien (css) machen.</description>
+    </item>
+    
+    <item>
+      <title>Bilder</title>
+      <link>https://opencoding.de/html/05_bilder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/05_bilder/</guid>
+      <description>Arbeitsauftrag Füge ein Bild in dein Dokument ein. Achte dabei auf das Urheberrecht.
+Syntax Bilder werden mit dem img-Tag eingebunden:
+&amp;lt;img src=“pfad zum element“ alt=“Alternative Beschreibung“ height=“40“ width=“20“/&amp;gt;   Das img-Attribut hat keinen Inhalt. Daher schreibt man üblicherweise am Ende des Tags /&amp;gt; was bedeutet, dass das Tag direkt nach dem öffnen wieder geschlossen wird.
+ Das src-Attribut funktioniert genauso wie das href-Attribut bei Links. Man kann genauso Dateien relativ zum aktuellen Pfad oder absolut verlinken.</description>
+    </item>
+    
+    <item>
+      <title>Tabellen</title>
+      <link>https://opencoding.de/html/06_tabellen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/06_tabellen/</guid>
+      <description>Arbeitsauftrag Füge eine Tabelle in deinem Dokument hinzu.
+Syntax Tabellen können in html mit folgender Syntax erstellt werden:
+&amp;lt;table&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Zeile 1 – Spalte 1 &amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Zeile 1 – Spalte 2&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;Zeile 1 – Spalte 3&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Zeile 2– Spalte 1&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Zeile 2 – Spalte 2&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Zeile 2 – Spalte 3&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/table&amp;gt;  Der Code erzeugt folgende Tabelle:
+  Zeile 1 – Spalte 1  Zeile 1 – Spalte 2Zeile 1 – Spalte 3  Zeile 2– Spalte 1 Zeile 2 – Spalte 2 Zeile 2 – Spalte 3   Tags  &amp;lt;table&amp;gt; : Das Table-Element umschließt die ganze Tabelle</description>
+    </item>
+    
+    <item>
+      <title>Absolute und relative Verweise</title>
+      <link>https://opencoding.de/html/absolute_relative_verweise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/absolute_relative_verweise/</guid>
+      <description>Absolute und relative Verweise An vielen Stellen unterscheidet man in Informatiksystemen zwischen absoluten Verweisen und relativen Verweisen.
+Ein absoluter Verweis gibt die volle Adresse einer Ressource an (bei einem Hyperlink die vollständige Domain und Dateipfad). Der relative Verweis gibt die Position einer Ressource relativ zur aktuellen Position (z.B. zum aktuellen Verzeichnis) an.</description>
+    </item>
+    
+    <item>
+      <title>Trennung von Layout und Inhalt</title>
+      <link>https://opencoding.de/html/layout_struktur_inhalt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/layout_struktur_inhalt/</guid>
+      <description>Eines der grundlegenden Prinzipien bei der Gestaltung von Texten ist die *Trennung von Struktur, Layout und Inhalt
+Dies hat folgende Vorteile:
+ Du kannst den selben Text mit einem anderen Layout für unterschiedliche Medien gestalten (Buch, Handy, Bildschirme unterschiedlicher Breite) Wenn gemeinsam Texte geschrieben werden, können die Inhalte leicht von einer Person wieder zusammengefügt werden. Durch die Trennung von Layout, Struktur und Inhalt wird ein Text barrierefrei. Jemand der blind ist, kann sich deinen Text nicht anschauen, aber um Beispiel vorlesen lassen.</description>
+    </item>
+    
+  </channel>
+</rss>

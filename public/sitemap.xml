@@ -15,11 +15,23 @@
   </url>
   
   <url>
+    <loc>https://opencoding.de/html/01_html_grundgeruest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/04_hyperlinks/</loc>
+  </url>
+  
+  <url>
     <loc>https://opencoding.de/impressum/</loc>
   </url>
   
   <url>
     <loc>https://opencoding.de/python_mit_turtle/01_installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/python_mit_turtle/00_operationen/</loc>
   </url>
   
   <url>
@@ -44,6 +56,14 @@
   
   <url>
     <loc>https://opencoding.de/python_textadventures/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/02_tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/03_attribute/</loc>
   </url>
   
   <url>
@@ -83,7 +103,15 @@
   </url>
   
   <url>
+    <loc>https://opencoding.de/html/05_bilder/</loc>
+  </url>
+  
+  <url>
     <loc>https://opencoding.de/python_mit_turtle/05_funktionen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/</loc>
   </url>
   
   <url>
@@ -91,7 +119,19 @@
   </url>
   
   <url>
+    <loc>https://opencoding.de/html/06_tabellen/</loc>
+  </url>
+  
+  <url>
     <loc>https://opencoding.de/python_mit_turtle/06_zufall/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/absolute_relative_verweise/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/layout_struktur_inhalt/</loc>
   </url>
   
   <url>

@@ -20,7 +20,7 @@
 zustand = &amp;quot;Eingang&amp;quot; while zustand!= &amp;quot;Ende&amp;quot;: pass  Damit hast du eine Endlosschleife und das Grundgerüst für dein späteres Textadventure. Innerhalb dieser Endlosschleife kannst du jetzt Aktionen abfragen.
 Du kannst dein Programm in Thonny mit dem Stop-Icon beenden, sonst läuft es ewig weiter:
 2. Entscheidungen Jetzt wird eine Entscheidung ergänzt:
-while zustand != &amp;quot;Ende&amp;quot;: print(&amp;quot;Du stehst an folgendem Ort: &amp;quot; + zustand) entscheidung = input(&amp;quot;In welche Richtung gehst du?</description>
+1 while zustand != &amp;quot;Ende&amp;quot;: 2 print(&amp;quot;Du stehst an folgendem Ort: &amp;quot; + zustand) 3 entscheidung = input(&amp;quot;In welche Richtung gehst du?</description>
     </item>
     
     <item>
