@@ -49,3 +49,8 @@ Daher verwendet man bei der HTML-Programmierung fast immer Pfade, die **relativ 
 •Mit **../**datei.html kannst du auf Dateien in übergeordneten Ordnern zugreifen
 
 •Mit **../nachbar/datei.html** kannst du auf Dateien zugreifen, die auf einem Ordner auf gleicher Ebene liegen.
+
+
+### Interne Links in repl.it
+
+In repl.it kannst du Dateien mit **Drag & Drop** hinzufügen. Ziehe dazu eine Datei von deinem Desktop in den linken Bereich deines repls, bis sich der Mauszeiger verändert.
