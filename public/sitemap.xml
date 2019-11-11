@@ -180,16 +180,15 @@
   </url>
   
   <url>
-    <loc>https://opencoding.de/html/layout_struktur_inhalt/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://opencoding.de/categories/</loc>
   </url>
   
   <url>
     <loc>https://opencoding.de/datenschutz/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/layout_struktur_inhalt/</loc>
   </url>
   
   <url>

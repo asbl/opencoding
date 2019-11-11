@@ -178,12 +178,15 @@ a:link bezeichnet einen noch nicht besuchten Link.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Konzept - Trennung von Inhalt, Struktur und Layout</title>
       <link>https://opencoding.de/html/layout_struktur_inhalt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://opencoding.de/html/layout_struktur_inhalt/</guid>
-      <description></description>
+      <description>Warum sollte man überhaupt Inhalt, Struktur und Layout trennen? Einer der Kernideen von HTMl+CSS ist es, Inhalt, Layout und Struktur zu trennen.
+Dies hat folgende Vorteile:
+ Ein Text kann unabhängig vom Ausgabemedium erstellt werden. Eine Webseite soll z.B. anders aussehen, je nachdem ob sie auf einem PC, Handy oder Tablet dargestellt werden soll.
+ Kollaboratives Arbeiten: Wenn du in Word-Dateien ohne Trennung von Layout/Inhalt/Struktur zusammenarbeitest, dann muss auch jeder Bearbeiter des Dokuments am Layout mitarbeiten, selbst wenn er z.</description>
     </item>
     
   </channel>

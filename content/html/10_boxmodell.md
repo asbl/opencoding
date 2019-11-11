@@ -20,7 +20,7 @@ Du kannst die Eigenschaft umstellen mit dem Attribut **display** .
 
 ### Beispiel: 
 
-Ein link wird normalerweise inline im Text dargestellt. Wenn dieser als Rechteck (**Block**) modelliert werden soll (z.B. weil er wie ein Button aussehen soll, dann musst du folgendes schreiben:
+Ein link wird normalerweise inline im Text dargestellt. Wenn dieser als Block modelliert werden soll (z.B. weil er wie ein Button aussehen soll, dann musst du folgendes schreiben:
 
 ```css
 a {
@@ -41,6 +41,8 @@ Dies sieht so aus:
 
 <a href="/" style="display: block; border: 2px solid black;">Ein Link</a>
 
+Als Block nimmt 
+
 ### Blöcke und Abstände
 
 Ein Block kann über Inhalt, Rahmen und Abstände definiert werden:![1573465342433](/html/boxmodell.png)
@@ -60,9 +62,9 @@ margin-left: 5px;
 
 Legt den den Rahmen fest, z.B. für einen Rahmen der Dicke 1 px in schwarz:
 
-  ```css
-  border: 1px solid black;
-  ```
+```css
+border: 1px solid black;
+```
 
 Es gibt ziemlich viele zusätzliche Attribute zum Gestalten von Rahmen: https://wiki.selfhtml.org/wiki/CSS/Eigenschaften/%C3%A4u%C3%9Fere_Gestaltung/Rahmen
 
