@@ -26,7 +26,7 @@ Farben können auch als Farbcode angegeben werden, z.B. als **rgb**-Wert (rgb: r
 
 ### Beispiel:
 
-![rgbvalue](/html/09_farben/1571660916244.png)
+![rgbvalue](/html/farben.png)
 
 
 Der Code **#00FF00** stellt die Farbe grün dar:
