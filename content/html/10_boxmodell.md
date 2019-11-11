@@ -6,7 +6,7 @@ weight: 10
 
 ## Arbeitsauftrag
 
-Erstelle mit dem Tag <div> einen Bereich mit Text, färbe den Hintergrund und lege Innen-und Außenabstände dieses Bereichs fest.
+Erstelle mit dem Tag **\<div\>** einen Bereich mit Text, färbe den Hintergrund und lege Innen-und Außenabstände dieses Bereichs fest.
 
 ## Theorie: Das Boxmodell
 

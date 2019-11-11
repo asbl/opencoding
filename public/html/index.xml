@@ -125,7 +125,7 @@ color: black; background-color: green;  Farbcodes Farben können auch als Farbco
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://opencoding.de/html/10_boxmodell/</guid>
-      <description>Arbeitsauftrag Erstelle mit dem Tag  einen Bereich mit Text, färbe den Hintergrund und lege Innen-und Außenabstände dieses Bereichs fest.
+      <description>Arbeitsauftrag Erstelle mit dem Tag &amp;lt;div&amp;gt; einen Bereich mit Text, färbe den Hintergrund und lege Innen-und Außenabstände dieses Bereichs fest.
 Theorie: Das Boxmodell Wenn die Hintergrundfarben, Rahmen und Abstände zeichnen willst, ist es wichtig das Box-Modell von HTML / CSS zu verstehen:
 Jedes Tag wird entweder inline dargestellt oder als Block.
 Du kannst die Eigenschaft umstellen mit dem Attribut display .
