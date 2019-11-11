@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://opencoding.de/datenstrukturen-und-algorithmen/01_einfache_sortieralgorithmen/",
+	"title": "Einfache Sortieralgorithmen",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://opencoding.de/data-science/01_erste_schritte/",
 	"title": "Erste Schritte",
 	"tags": [],
@@ -25,7 +32,7 @@
 	"title": "HTML Grundgerüst",
 	"tags": [],
 	"description": "",
-	"content": " Arbeitsauftrag Lege eine Datei index.html mit folgendem Inhalt an:\n\u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html lang=\u0026quot;de\u0026quot;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;title\u0026gt;Titel der Einzelseite\u0026lt;/title\u0026gt; \u0026lt;link href=\u0026quot;style.css\u0026quot; type=\u0026quot;text/css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt; \u0026lt;meta charset=\u0026quot;UTF-8\u0026quot;\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;  Hinweis für Windows-Benutzer Wenn du die Endung .html der Datei nicht ändern kannst, musst du die Windows-Option „Bekannte Dateiendungen ausblenden“ deaktivieren.\nMehr Infos über HTML Ein HTML-Dokument ist folgendermaßen aufgebaut:\n Tags, enthalten Inhalte oder andere Tags. Ein Tag wird mit spitzen Klammern beschrieben, z.B. \u0026lt;head\u0026gt;, \u0026lt;html\u0026gt;, \u0026lt;body\u0026gt;. Auf diese Weise beschreiben Tags die Elemente des HTML-Dokuments.  Elemente werden üblicherweise geöffnet mit \u0026lt;tagname\u0026gt; und mit \u0026lt;/tagname\u0026gt; geschlossen. Alles was dazwischen steht, befindet sich innerhalb des Elements.\nVon dieser Regel gibt es einige Ausnahmen. Wenn ein Tag keinen Inhalt hat, dann muss dies auch nicht geschlossen werden. Man kann dies trotzdem durch ein / am Ende des Tags kennzeichnen, z.B. in dem man schreibt: \u0026lt;meta charset=\u0026quot;UTF-8\u0026quot;/\u0026gt;.\nAuf diese Weise ergibt sich die Struktur des Dokuments:\nrepl.it Du kannst deine HTML-Datei auch in [repl.it] bearbeiten. Melde dich dazu auf der Plattform an und erstelle ein neues \u0026ldquo;HTML+CSS+JS\u0026rdquo;-repl\nIn diesem Fall musst das HTML Grundgerüst nicht mehr kopieren, sondern kannst das von repl.it vorgegebene Gerüst verwenden.\n"
+	"content": " Arbeitsauftrag Lege eine Datei index.html mit folgendem Inhalt an und schreibe zwischen \u0026lt;body\u0026gt; und \u0026lt;/body\u0026gt; einen kurzen Text. Lasse dir diesen im Browser (oder im repl-Fenster anzeigen.)\n\u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html lang=\u0026quot;de\u0026quot;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;title\u0026gt;Titel der Einzelseite\u0026lt;/title\u0026gt; \u0026lt;link href=\u0026quot;style.css\u0026quot; type=\u0026quot;text/css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt; \u0026lt;meta charset=\u0026quot;UTF-8\u0026quot;\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;  Hinweis für Windows-Benutzer Wenn du die Endung .html der Datei nicht ändern kannst, musst du die Windows-Option „Bekannte Dateiendungen ausblenden“ deaktivieren.\nMehr Infos über HTML Ein HTML-Dokument ist folgendermaßen aufgebaut:\n Tags, enthalten Inhalte oder andere Tags. Ein Tag wird mit spitzen Klammern beschrieben, z.B. \u0026lt;head\u0026gt;, \u0026lt;html\u0026gt;, \u0026lt;body\u0026gt;. Auf diese Weise beschreiben Tags die Elemente des HTML-Dokuments.  Elemente werden üblicherweise geöffnet mit \u0026lt;tagname\u0026gt; und mit \u0026lt;/tagname\u0026gt; geschlossen. Alles was dazwischen steht, befindet sich innerhalb des Elements.\nVon dieser Regel gibt es einige Ausnahmen. Wenn ein Tag keinen Inhalt hat, dann muss dies auch nicht geschlossen werden. Man kann dies trotzdem durch ein / am Ende des Tags kennzeichnen, z.B. in dem man schreibt: \u0026lt;meta charset=\u0026quot;UTF-8\u0026quot;/\u0026gt;.\nAuf diese Weise ergibt sich die Struktur des Dokuments:\nrepl.it Du kannst deine HTML-Datei auch in [repl.it] bearbeiten. Melde dich dazu auf der Plattform an und erstelle ein neues \u0026ldquo;HTML+CSS+JS\u0026rdquo;-repl\nIn diesem Fall musst das HTML Grundgerüst nicht mehr kopieren, sondern kannst das von repl.it vorgegebene Gerüst verwenden.\n"
 },
 {
 	"uri": "https://opencoding.de/impressum/",
@@ -91,6 +98,13 @@
 	"content": " Python Textadventures In diesem Tutorial lernst du, wie du mit Python einfache Textadventures erstellen kannst.\n"
 },
 {
+	"uri": "https://opencoding.de/datenstrukturen-und-algorithmen/02_rekursion/",
+	"title": "Rekursion",
+	"tags": [],
+	"description": "",
+	"content": " Was ist Rekursion? Beschreiben sie anhand folgender Beispiele, was Rekursion bedeutet\n1. Kunst Beschreiben Sie, was die Bilder gemeinsam haben. Wie entstehen die Bilder?\nMandelbrot-Menge: Sirpinski Dreieck: 2. Treppenstufen Suche für folgende Aufgabe eine Treppe. Berechnen, wie viele unterschiedliche Möglichkeiten es nach folgenden Regeln gibt, wie man eine bestimmte Stufe erreichen kann.\n Du beginnst auf Treppenstufe 0 Du musst Stufe 1 betreten. Wenn man nicht auf der 0. Stufe steht, kannst du immer entweder auf die nächste oder auch auf die übernächste Stufe steigen.  Beispiel:  Es gibt zwei Möglichkeiten, Stufe 3 zu erreichen.\n"
+},
+{
 	"uri": "https://opencoding.de/html/02_tags/",
 	"title": "Tags",
 	"tags": [],
@@ -138,6 +152,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Lektion 2: Schleifen Aufgabe 2.1: Schleifen Meist ist es nicht sehr effizient die selben Anweisungen mehrfach zu schreiben. Im folgenden Programm siehst du, wie du etwas wiederholen kannst. Die Zeilen 3 und 4 sind eingerückt - dies ist wichtig- um dem Programm mitzuteilen, dass diese Zeilen innerhalb der Schleife wiederholt werden:\nimport turtle for i in range(4): turtle.forward(100) turtle.right(90)  Grafisch kann man den Programmablauf in einem Flussdiagramm visualisieren:\ngraph LR; A[\"Start\"] -- B(\"turtle.forward(100)\") B -- C(\"turtle.right(90)\") C -- D(\"Schleife beendet?\") D --|Nein| A D --|Ja| E[\"Ende\"] E  Aufgabe 2.2: Code analysieren Schau dir folgendes Programm an und überlege was es tut. Zeichne das Ergebnis auf ein Blatt Papier\nFolgende Fragen helfen dir bei der Analyse.\n Wann zeichnet die Turtle, wann zeichnet sie nicht?\n Welche Zeilen werden wiederholt, welche Zeilen werden nicht wiederholt?\n  Führe nach deiner Analyse den Code aus, um dich selbst zu überprüfen.\n \u0026ndash;\u0026gt; Lösung anzeigen\nimport turtle import turtle turtle.penup() turtle.backward(300) turtle.pendown() for i in range(4): turtle.forward(100) turtle.right(90) turtle.penup() turtle.forward(150) turtle.pendown() for i in range(4): turtle.forward(100) turtle.right(90)  \nAufgabe 2.3: Quadrate Zeichne das folgende Muster. Verwende für das Muster (So wie für alle folgenden Muster) Schleifen um möglichst wenige Befehle zu verwenden.\nAufgabe 2.4: Pentagramm Zeichne folgendes Muster\nAufgabe 2.5: Pentagramme Zeichne folgendes Muster\nAufgabe 2.6: Stern Zeichne folgendes Muster\nAufgabe 2.7: Größer werdende Rechtecke Zeichne folgendes Muster\n"
+},
+{
+	"uri": "https://opencoding.de/datenstrukturen-und-algorithmen/",
+	"title": "Algorithmik",
+	"tags": [],
+	"description": "",
+	"content": " Datenstrukturen und Algorithmen Aufgabensammlung Datenstrukturen und Algorithmen\nLizenz: CC-BY 4.0\n"
 },
 {
 	"uri": "https://opencoding.de/python-mit-pygame/04_bewegungen/",
@@ -231,14 +252,56 @@
 	"content": " Aufgabe 1: Grundsätzliche Überlegungen Das folgende Programm erstellt eine Form:\nimport turtle def shape(): for i in range(4): turtle.forward(50) turtle.right(90) shape()  Beantworte folgende Fragen, passe das Programm dafür an:\n Wie müsste man das Programm verändern, wenn man eine dreiseitige Figur erstellen möchte?\n Wie müsste man das Programm verändern, wenn man eine fünfseitige Figur erstellen möchte?\n Was ist die Beziehung zwischen Seitenanzahl und Winkel, den die Turtle zeichnen muss.\n Was benötigst du noch, wenn du eine zufällige Figur zwischen 3 und 6 Ecken zeichnen möchtest?\n  Aufgabe 2: Parameter Damit das Unterprogramm beliebige Formen zeichnen kann, musst das Unterprogramm wissen, wie viele Seiten die Figur haben soll. Du kannst dies mit Hilfe von Parametern realisieren.\nBetrachte dazu folgendes Programm\ndef shape(anzahl): print(anzahl)\nanzahl = 3 shape(anzahl)\nProbiere aus, was passiert, wenn du den Wert für Anzahl in Zeile 3 durch 4,5 oder 6 ersetzt.\nHinweis: In repl.it siehst du die Ausgabe mit Klick auf Console\nAufgabe 3: Parameter verwenden Du kannst den Namen Anzahl in deiner Funktion wie eine Zahl verwenden.\ndef shape(anzahl): for i in range(anzahl): turtle.forward(100) turtle.right(...) shape()  Finde den richtigen Ausdruck für \u0026hellip; heraus, so dass die Figur mit der richtigen Anzahl an Seiten gezeichnet wird. Du kannst in die Klammern aus Rechenausdrücke einsetzen, wie z.B. anzahl*10, anzahl / 10, \u0026hellip;.\nAufgabe 4: Parameter verwenden Erweitere deine Programme aus den vorherigen Übungen so, dass zufällige Figuren gezeichnet werden.\n"
 },
 {
-	"uri": "https://opencoding.de/html/absolute_relative_verweise/",
+	"uri": "https://opencoding.de/html/08_css/",
+	"title": "CSS",
+	"tags": [],
+	"description": "",
+	"content": " Arbeitsauftrag HTML-Code kann mit Hilfe von CSS (Cascading Style Sheets) gestaltet werden.\nEine CSS Datei erstellen Erstelle eine neue Datei im gleichen Ordner wie deine HTML-Datei mit den Namen style.css.\nSchreibe in die Datei folgenden Text:\nb { color: red; }  Der Code gibt allen  Tags eine rote Farbe. Bevor du die Änderung sehen kannst, musst du die Datei in HTML einbinden.\nCSS-Datei im HTML-Code einbinden Dafür muss innerhalb des head-Tags folgender Code eingefügt werden.\n\u0026lt;link rel=\u0026quot;stylesheet\u0026quot; type=\u0026quot;text/css\u0026quot; href=\u0026quot;style.css\u0026quot;/\u0026gt;  style.css ist der Dateiname deiner Datei. Wenn du diese anders nennst oder in einem anderen Ordner speicherst, musst du diese Stelle entsprechend abändern.\nEigenschaften zuweisen. Jetzt kannst du einige deiner HTML-Tags gestalten, indem du dem HTML-Tag Eigenschaften zuweist.\na { color: white; background-color: black; } b { color: red; }  Interessante css-Eigenschaften sind z.B. color, background-color, height, width, max-width, align, …\nAufbau einer CSS-Datei Referenz Eine Liste von Eigenscharten und möglichen Werten findest du hier: http://www.html-seminar.de/css-definitionen-uebersicht.htm\nTypische Fehlerquellen  Verwende kein = bei Wertzuweisungen (color : red, nicht color = red) Setze immer ein Semikolon ; am Ende einer Zeile, ansonsten werden deine nächsten Definitionen in der Regel nicht angewendet.  Mehr Infos über CSS  Mehr Infos zur Syntax: https://wiki.selfhtml.org/wiki/CSS/Tutorials/Einstieg/Syntax  "
+},
+{
+	"uri": "https://opencoding.de/html/09_farben/",
+	"title": "Farben",
+	"tags": [],
+	"description": "",
+	"content": " Arbeitsauftrag  Markiere einen Text in deinem HTML-Dokument farbig. Färbe den Hintergrund eines HTML-Dokumentes farbig.  Syntax Zum Setzen von Farben kannst du die Attribute color und background-color verwenden.\nAls Wert kannst du entweder Farben mit Namen (red, green, \u0026hellip;) oder als Farbcode angeben, z.B. in der folgenden Form:\ncolor: black; background-color: green;  Farbcodes Farben können auch als Farbcode angegeben werden, z.B. als rgb-Wert (rgb: red, green, blue).\nBeispiel: Der Code #00FF00 stellt die Farbe grün dar:\n Der Anteil von rot (als Hexadezimalzahl) beträgt 00 Der Anteil von grün (als Hexadezimalzahl) beträgt FF = 255 Der Anteil von blau (als Hexadezimalzahl) beträgt 00  Farbcodes generiern: Du kannst Farbcodes unter www.colorpicker.com generieren.\n"
+},
+{
+	"uri": "https://opencoding.de/html/10_boxmodell/",
+	"title": "Das Box-Modell",
+	"tags": [],
+	"description": "",
+	"content": " Arbeitsauftrag Erstelle mit dem Tag  einen Bereich mit Text, färbe den Hintergrund und lege Innen-und Außenabstände dieses Bereichs fest.\nTheorie: Das Boxmodell Wenn die Hintergrundfarben, Rahmen und Abstände zeichnen willst, ist es wichtig das Box-Modell von HTML / CSS zu verstehen:\nJedes Tag wird entweder inline dargestellt oder als Block.\nDu kannst die Eigenschaft umstellen mit dem Attribut display .\nBeispiel: Ein link wird normalerweise inline im Text dargestellt. Wenn dieser als Rechteck (Block) modelliert werden soll (z.B. weil er wie ein Button aussehen soll, dann musst du folgendes schreiben:\na { display: block; }  Besser siehst du dies, wenn du dem Link einen Rahmen gibst:\na { display: block; border: 1px solid black }  Dies sieht so aus:\nEin Link\nBlöcke und Abstände Ein Block kann über Inhalt, Rahmen und Abstände definiert werden:Margin Legst die außenabstände fest.\nBeispiele:\nmargin: 10 px; margin-left: 5px;  Border Legt den den Rahmen fest, z.B. für einen Rahmen der Dicke 1 px in schwarz:\nborder: 1px solid black;  Es gibt ziemlich viele zusätzliche Attribute zum Gestalten von Rahmen: https://wiki.selfhtml.org/wiki/CSS/Eigenschaften/%C3%A4u%C3%9Fere_Gestaltung/Rahmen\nPadding Legt die Innenabstände fest.\nBeispiele:\npadding: 10 %; padding-right: 5px;  Diese Eigenschaften funktionieren nur bei Elementen mit der Eigenschaft display : block!\nHierarchien Hierarchien: Oft will man mit CSS nur bestimmte Elemnte auswählen, z.B. alle Links, die sich in dem div container mit der Klasse footer befinden. Dies sieht in html folgendermaßen aus: Link wird gestylt  Link wird nicht gestylt. In CSS kann man dazu auch hierarchisch Elemente festlegen: .footer a {…} stylt alle Elemente die unterhalb der Klasse a liegen. Genauso kann man auch schreiben: div.footer a {} – Es werden alle Elemente gestylt die unterhalb eines Div-Elementes liegen, dass die Klasse footer besitzt.css Siehe auch: https://www.w3schools.com/Css/css_combinators.asp\n"
+},
+{
+	"uri": "https://opencoding.de/html/11_klassen/",
+	"title": "Klassen",
+	"tags": [],
+	"description": "",
+	"content": " Arbeitsauftrag Erstelle mehrere Tags gleicher Art. Gestalte mit Hilfe von Klassen nur einzelne Objekte dieses Tags.\nDu kannst z.B. mehrere Links erstellen und einige Links als button gestalten.\nTheorie: Klassen Klassen sind im Baupläne oder Schablonen. Die Idee ist es, CSS Code wiederzuverwenden, denn mit Hilfe von Klassen must du nicht jeden einzelnen Link einzeln formatieren.\nBeispiel: Buttons Sollen bestimmte Links als Buttons gezeigt werden, so weist man all diesen Links die Klasse button zu. Sollen die selben Links in rot formatiert werden, so weist man ihnen zusätzlich die Klasse red zu.\nIn deinem HTML-Code können Klassen mit Hilfe des Attributes class zugewiesen werden:\n\u0026lt;a href=\u0026quot;impressum.html\u0026quot; class=\u0026quot;button red\u0026quot;\u0026gt;Impressum\u0026lt;/a\u0026gt;  Dies weist dem Link die Klassen button und red zu.\nIn der CSS-Datei können diese Klassen nun folgendermaßen formattiert werden:\nbutton { border: 1px solid black; padding: 5px; } .red { background-color: red; }  Im CSS Code wird vor die Klasse ein Punkt geschrieben, um sie von Tags zu unterscheiden.\n"
+},
+{
+	"uri": "https://opencoding.de/html/12_klassen/",
+	"title": "Klassen",
+	"tags": [],
+	"description": "",
+	"content": " Arbeitsauftrag Erstelle mehrere Tags gleicher Art. Gestalte mit Hilfe von Klassen nur einzelne Objekte dieses Tags.\nDu kannst z.B. mehrere Links erstellen und einige Links als button gestalten.\nTheorie: Klassen Klassen sind im Baupläne oder Schablonen. Die Idee ist es, CSS Code wiederzuverwenden, denn mit Hilfe von Klassen must du nicht jeden einzelnen Link einzeln formatieren.\nBeispiel: Buttons Sollen bestimmte Links als Buttons gezeigt werden, so weist man all diesen Links die Klasse button zu. Sollen die selben Links in rot formatiert werden, so weist man ihnen zusätzlich die Klasse red zu.\nIn deinem HTML-Code können Klassen mit Hilfe des Attributes class zugewiesen werden:\n\u0026lt;a href=\u0026quot;impressum.html\u0026quot; class=\u0026quot;button red\u0026quot;\u0026gt;Impressum\u0026lt;/a\u0026gt;  Dies weist dem Link die Klassen button und red zu.\nIn der CSS-Datei können diese Klassen nun folgendermaßen formattiert werden:\nbutton { border: 1px solid black; padding: 5px; } .red { background-color: red; }  Im CSS Code wird vor die Klasse ein Punkt geschrieben, um sie von Tags zu unterscheiden.\n"
+},
+{
+	"uri": "https://opencoding.de/html/12_links_pseudoklassen/",
+	"title": "Links und Pseudoklassen",
+	"tags": [],
+	"description": "",
+	"content": " Arbeitsauftrag Erstelle einen Link und gestalte mit CSS den Link unterschiedlich je anchdem, ob dieser bereits besucht wurde oder noch nicht besucht wurde. Füge einen Hover-Effekt beim Überfahren mit der Maus hinzu.\nTheorie: Pseudoklassen Beim gestalten von Links gibt es eine Besonderheit, die man beachten muss:\nLinks können verschiedene Zustände haben, je nachdem, ob diese bereits besucht wurden. Man kann diese folgendermaßen stylen:\na:link bezeichnet einen noch nicht besuchten Link. a:visited bezeichnet einen besuchten Link.\nMan nennt dies auch Pseudoklassen. Weitere Pseudoklassen sind a:hover wenn die Maus gerade über einen Link fährt sowie a:active für einen ausgewählten Link.\nReihenfolge der Definitionen a:hover muss dabei nach a:link und a:visited definiert werden, damit es einen Effekt hat. Man kann mit hover auch andere Elemente stylen.\nWeitere Pseudoklassen Es gibt noch weitere Pseudo-Klassen, mit denen man Elemente auswählen kann, z.B. li:nth-child(even) um nur gerade Listenelemente auszuwählen. Siehe: https://wiki.selfhtml.org/wiki/CSS/Selektoren/Pseudoklasse/strukturelle_Pseudoklasse/nth-child\n"
+},
+{
+	"uri": "https://opencoding.de/backup/absolute_relative_verweise/",
 	"title": "Absolute und relative Verweise",
 	"tags": [],
 	"description": "",
 	"content": " Absolute und relative Verweise An vielen Stellen unterscheidet man in Informatiksystemen zwischen absoluten Verweisen und relativen Verweisen.\nEin absoluter Verweis gibt die volle Adresse einer Ressource an (bei einem Hyperlink die vollständige Domain und Dateipfad). Der relative Verweis gibt die Position einer Ressource relativ zur aktuellen Position (z.B. zum aktuellen Verzeichnis) an.\n"
 },
 {
-	"uri": "https://opencoding.de/html/layout_struktur_inhalt/",
+	"uri": "https://opencoding.de/backup/layout_struktur_inhalt/",
 	"title": "Trennung von Layout und Inhalt",
 	"tags": [],
 	"description": "",
@@ -249,7 +312,14 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": " Open Coding Lerneinheiten  Python mit Turtlegrafik  Python mit Turtlegrafik In diesem Tutorial lernst du, wie du mit Hilfe von Turtle-Grafik mit Python Algorithmen erstellen kannst. Lizenz Die Übungen basieren auf Arbeitsblättern von James Watts https://community.computingatschool.org.uk/resources/2851/single . Das komplette Tutorial steht unter Creative Commons by-sa 3.0-Lizenz.\n Python - Textadventures  Python Textadventures In diesem Tutorial lernst du, wie du mit Python einfache Textadventures erstellen kannst.\n Computergrafik mit Pygame  Computergrafik mit Pygame In diesem Tutorial lernst du, wie du mit Python und Pygame zeichnen und Animationen erstellen kannst.\n Data Science  Data Science Listen + Matplotlib\n HTML  HTML Tutorial: HTML, CSS, Bootstrap Lizenz: CC-BY 4.0\n Interaktive Kurse Die Kurse laufen auf der Plattform stepik.org und enthalten zahlreiche interaktive Übungen.\nLaufende Kurse Die folgenden Kurse laufen zur Zeit. Du kannst an ihnen teilnehmen, erhälst aber bei Aufgaben keine vollen Punkte, wenn du diese nicht von Anfang an verfolgt hast.\n Informatisches Denken mit Python 2019 - Angelaufen\n Netzwerke und Internet\n  Offen für alle Bei abgelaufenen Kursen entferne ich die Fristen, so dass du volle Punktzahlen für die Lektionen erhälst.\n Python Kurs 2019\n SQL-Kurs 2019\n  Miniworldmaker  Miniworldmaker - Der Miniworldmaker ist ein Framework -ähnlich zu Greenfoot in Java-, mit welchem du Spiele in Miniwelten entwerfen kannst.  "
+	"content": " Open Coding Lerneinheiten  Python mit Turtlegrafik  Python mit Turtlegrafik In diesem Tutorial lernst du, wie du mit Hilfe von Turtle-Grafik mit Python Algorithmen erstellen kannst. Lizenz Die Übungen basieren auf Arbeitsblättern von James Watts https://community.computingatschool.org.uk/resources/2851/single . Das komplette Tutorial steht unter Creative Commons by-sa 3.0-Lizenz.\n Python - Textadventures  Python Textadventures In diesem Tutorial lernst du, wie du mit Python einfache Textadventures erstellen kannst.\n Computergrafik mit Pygame  Computergrafik mit Pygame In diesem Tutorial lernst du, wie du mit Python und Pygame zeichnen und Animationen erstellen kannst.\n Algorithmik  Datenstrukturen und Algorithmen Aufgabensammlung Datenstrukturen und Algorithmen Lizenz: CC-BY 4.0\n Data Science  Data Science Listen + Matplotlib\n HTML  HTML Tutorial: HTML, CSS, Bootstrap Lizenz: CC-BY 4.0\n Backups  \n Interaktive Kurse Die Kurse laufen auf der Plattform stepik.org und enthalten zahlreiche interaktive Übungen.\nLaufende Kurse Die folgenden Kurse laufen zur Zeit. Du kannst an ihnen teilnehmen, erhälst aber bei Aufgaben keine vollen Punkte, wenn du diese nicht von Anfang an verfolgt hast.\n Informatisches Denken mit Python 2019 - Angelaufen\n Netzwerke und Internet\n  Offen für alle Bei abgelaufenen Kursen entferne ich die Fristen, so dass du volle Punktzahlen für die Lektionen erhälst.\n Python Kurs 2019\n SQL-Kurs 2019\n  Miniworldmaker  Miniworldmaker - Der Miniworldmaker ist ein Framework -ähnlich zu Greenfoot in Java-, mit welchem du Spiele in Miniwelten entwerfen kannst.  "
+},
+{
+	"uri": "https://opencoding.de/backup/",
+	"title": "Backups",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "https://opencoding.de/categories/",

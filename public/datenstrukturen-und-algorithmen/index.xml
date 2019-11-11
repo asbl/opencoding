@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithmik on opencoding</title>
+    <link>https://opencoding.de/datenstrukturen-und-algorithmen/</link>
+    <description>Recent content in Algorithmik on opencoding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    
+	<atom:link href="https://opencoding.de/datenstrukturen-und-algorithmen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Einfache Sortieralgorithmen</title>
+      <link>https://opencoding.de/datenstrukturen-und-algorithmen/01_einfache_sortieralgorithmen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/datenstrukturen-und-algorithmen/01_einfache_sortieralgorithmen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rekursion</title>
+      <link>https://opencoding.de/datenstrukturen-und-algorithmen/02_rekursion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/datenstrukturen-und-algorithmen/02_rekursion/</guid>
+      <description>Was ist Rekursion? Beschreiben sie anhand folgender Beispiele, was Rekursion bedeutet
+1. Kunst Beschreiben Sie, was die Bilder gemeinsam haben. Wie entstehen die Bilder?
+Mandelbrot-Menge: Sirpinski Dreieck: 2. Treppenstufen Suche für folgende Aufgabe eine Treppe. Berechnen, wie viele unterschiedliche Möglichkeiten es nach folgenden Regeln gibt, wie man eine bestimmte Stufe erreichen kann.
+ Du beginnst auf Treppenstufe 0 Du musst Stufe 1 betreten. Wenn man nicht auf der 0. Stufe steht, kannst du immer entweder auf die nächste oder auch auf die übernächste Stufe steigen.</description>
+    </item>
+    
+  </channel>
+</rss>

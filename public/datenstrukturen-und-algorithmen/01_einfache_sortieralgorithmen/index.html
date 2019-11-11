@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="de" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.59.0" />
+    <meta name="description" content="Programmieren - Tutorials und Kurse">
+<meta name="author" content="Andreas Siebel">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Einfache Sortieralgorithmen :: opencoding</title>
+
+    
+    <link href="/css/nucleus.css?1573466446" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1573466446" rel="stylesheet">
+    <link href="/css/hybrid.css?1573466446" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1573466446" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1573466446" rel="stylesheet">
+    <link href="/css/auto-complete.css?1573466446" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1573466446" rel="stylesheet">
+    <link href="/css/theme.css?1573466446" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1573466446" rel="stylesheet">
+    
+      <link href="/css/theme-red.css?1573466446" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1573466446"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/datenstrukturen-und-algorithmen/01_einfache_sortieralgorithmen/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://opencoding.de">
+  opencoding.de
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Suchen...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1573466446"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1573466446"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/opencoding.de";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1573466446"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/python_mit_turtle/" title="Python mit Turtlegrafik" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/python_mit_turtle/">
+          Python mit Turtlegrafik
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_mit_turtle/01_installation/" title="Installation" class="dd-item ">
+        <a href="/python_mit_turtle/01_installation/">
+        <b>1. </b>Installation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_mit_turtle/00_operationen/" title="Operationen" class="dd-item ">
+        <a href="/python_mit_turtle/00_operationen/">
+        <b>1. </b>Operationen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_mit_turtle/02_basics/" title="Python Basics" class="dd-item ">
+        <a href="/python_mit_turtle/02_basics/">
+        <b>2. </b>Python Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_mit_turtle/03_schleifen/" title="Schleifen" class="dd-item ">
+        <a href="/python_mit_turtle/03_schleifen/">
+        <b>3. </b>Schleifen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_mit_turtle/04_eingaben/" title="Eingaben" class="dd-item ">
+        <a href="/python_mit_turtle/04_eingaben/">
+        <b>4. </b>Eingaben
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_mit_turtle/05_funktionen/" title="Funktionen" class="dd-item ">
+        <a href="/python_mit_turtle/05_funktionen/">
+        <b>5. </b>Funktionen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_mit_turtle/06_zufall/" title="Zufall" class="dd-item ">
+        <a href="/python_mit_turtle/06_zufall/">
+        <b>6. </b>Zufall
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_mit_turtle/07_zufallsmuster/" title="Zufallsmuster" class="dd-item ">
+        <a href="/python_mit_turtle/07_zufallsmuster/">
+        <b>7. </b>Zufallsmuster
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/python_textadventures/" title="Python - Textadventures" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/python_textadventures/">
+          Python - Textadventures
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_textadventures/01_first_steps/" title="Erste Schritte (Entscheidungen if-then-else)" class="dd-item ">
+        <a href="/python_textadventures/01_first_steps/">
+        <b>1. </b>Erste Schritte (Entscheidungen if-then-else)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_textadventures/02_easygui/" title="Easygui" class="dd-item ">
+        <a href="/python_textadventures/02_easygui/">
+        <b>2. </b>Easygui
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_textadventures/03_funktionen/" title="Funktionen" class="dd-item ">
+        <a href="/python_textadventures/03_funktionen/">
+        <b>3. </b>Funktionen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python_textadventures/04_weitere_ideen/" title="Weitere Ideen" class="dd-item ">
+        <a href="/python_textadventures/04_weitere_ideen/">
+        <b>4. </b>Weitere Ideen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/python-mit-pygame/" title="Computergrafik mit Pygame" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/python-mit-pygame/">
+          Computergrafik mit Pygame
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python-mit-pygame/01_erste_schritte/" title="Erste Schritte" class="dd-item ">
+        <a href="/python-mit-pygame/01_erste_schritte/">
+        <b>1. </b>Erste Schritte
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python-mit-pygame/02_mainloop/" title="Die Mainloop" class="dd-item ">
+        <a href="/python-mit-pygame/02_mainloop/">
+        <b>2. </b>Die Mainloop
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python-mit-pygame/03_bilder_zeichnen/" title="Bilder zeichnen" class="dd-item ">
+        <a href="/python-mit-pygame/03_bilder_zeichnen/">
+        <b>3. </b>Bilder zeichnen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python-mit-pygame/04_bewegungen/" title="Bewegungen" class="dd-item ">
+        <a href="/python-mit-pygame/04_bewegungen/">
+        <b>4. </b>Bewegungen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/python-mit-pygame/05_mehr_infos/" title="Mehr Infos" class="dd-item ">
+        <a href="/python-mit-pygame/05_mehr_infos/">
+        <b>5. </b>Mehr Infos
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/datenstrukturen-und-algorithmen/" title="Algorithmik" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/datenstrukturen-und-algorithmen/">
+          Algorithmik
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/datenstrukturen-und-algorithmen/01_einfache_sortieralgorithmen/" title="Einfache Sortieralgorithmen" class="dd-item active">
+        <a href="/datenstrukturen-und-algorithmen/01_einfache_sortieralgorithmen/">
+        <b>1. </b>Einfache Sortieralgorithmen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/datenstrukturen-und-algorithmen/02_rekursion/" title="Rekursion" class="dd-item ">
+        <a href="/datenstrukturen-und-algorithmen/02_rekursion/">
+        <b>2. </b>Rekursion
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/data-science/" title="Data Science" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/data-science/">
+          Data Science
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-science/01_erste_schritte/" title="Erste Schritte" class="dd-item ">
+        <a href="/data-science/01_erste_schritte/">
+        <b>1. </b>Erste Schritte
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-science/02_listen/" title="Listen" class="dd-item ">
+        <a href="/data-science/02_listen/">
+        <b>2. </b>Listen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-science/03_matplotlib/" title="Matplotlib" class="dd-item ">
+        <a href="/data-science/03_matplotlib/">
+        <b>3. </b>Matplotlib
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/html/" title="HTML" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/html/">
+          HTML
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/01_html_grundgeruest/" title="HTML Grundgerüst" class="dd-item ">
+        <a href="/html/01_html_grundgeruest/">
+        <b>1. </b>HTML Grundgerüst
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/02_tags/" title="Tags" class="dd-item ">
+        <a href="/html/02_tags/">
+        <b>2. </b>Tags
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/03_attribute/" title="Attribute" class="dd-item ">
+        <a href="/html/03_attribute/">
+        <b>3. </b>Attribute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/04_hyperlinks/" title="Hyperlinks" class="dd-item ">
+        <a href="/html/04_hyperlinks/">
+        <b>4. </b>Hyperlinks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/05_bilder/" title="Bilder" class="dd-item ">
+        <a href="/html/05_bilder/">
+        <b>5. </b>Bilder
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/06_tabellen/" title="Tabellen" class="dd-item ">
+        <a href="/html/06_tabellen/">
+        <b>6. </b>Tabellen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/07_listen/" title="Listen" class="dd-item ">
+        <a href="/html/07_listen/">
+        <b>7. </b>Listen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/08_css/" title="CSS" class="dd-item ">
+        <a href="/html/08_css/">
+        <b>8. </b>CSS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/09_farben/" title="Farben" class="dd-item ">
+        <a href="/html/09_farben/">
+        <b>9. </b>Farben
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/10_boxmodell/" title="Das Box-Modell" class="dd-item ">
+        <a href="/html/10_boxmodell/">
+        <b>10. </b>Das Box-Modell
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/11_klassen/" title="Klassen" class="dd-item ">
+        <a href="/html/11_klassen/">
+        <b>11. </b>Klassen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/12_klassen/" title="Klassen" class="dd-item ">
+        <a href="/html/12_klassen/">
+        <b>12. </b>Klassen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/html/12_links_pseudoklassen/" title="Links und Pseudoklassen" class="dd-item ">
+        <a href="/html/12_links_pseudoklassen/">
+        <b>12. </b>Links und Pseudoklassen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/" title="Backups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/backup/">
+          Backups
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/backup/absolute_relative_verweise/" title="Absolute und relative Verweise" class="dd-item ">
+        <a href="/backup/absolute_relative_verweise/">
+        Absolute und relative Verweise
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/backup/layout_struktur_inhalt/" title="Trennung von Layout und Inhalt" class="dd-item ">
+        <a href="/backup/layout_struktur_inhalt/">
+        Trennung von Layout und Inhalt
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>Mehr</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://opencoding.de/impressum">Impressum</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://opencoding.de/datenschutz">Datenschutzerklärung</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/datenstrukturen-und-algorithmen/'>Algorithmik</a> > Einfache Sortieralgorithmen
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Einfache Sortieralgorithmen
+            </h1>
+          
+
+        
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/datenstrukturen-und-algorithmen/" title="Algorithmik"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/datenstrukturen-und-algorithmen/02_rekursion/" title="Rekursion" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1573466446"></script>
+    <script src="/js/perfect-scrollbar.min.js?1573466446"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1573466446"></script>
+    <script src="/js/jquery.sticky.js?1573466446"></script>
+    <script src="/js/featherlight.min.js?1573466446"></script>
+    <script src="/js/highlight.pack.js?1573466446"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1573466446"></script>
+    <script src="/js/learn.js?1573466446"></script>
+    <script src="/js/hugo-learn.js?1573466446"></script>
+
+    <link href="/mermaid/mermaid.css?1573466446" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1573466446"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+    </script>
+    
+
+  </body>
+</html>
+

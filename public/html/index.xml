@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HTML on opencoding</title>
@@ -16,10 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://opencoding.de/html/01_html_grundgeruest/</guid>
-      <description>Arbeitsauftrag Lege eine Datei index.html mit folgendem Inhalt an:
+      <description>Arbeitsauftrag Lege eine Datei index.html mit folgendem Inhalt an und schreibe zwischen &amp;lt;body&amp;gt; und &amp;lt;/body&amp;gt; einen kurzen Text. Lasse dir diesen im Browser (oder im repl-Fenster anzeigen.)
 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;de&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Titel der Einzelseite&amp;lt;/title&amp;gt; &amp;lt;link href=&amp;quot;style.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  Hinweis für Windows-Benutzer Wenn du die Endung .html der Datei nicht ändern kannst, musst du die Windows-Option „Bekannte Dateiendungen ausblenden“ deaktivieren.
-Mehr Infos über HTML Ein HTML-Dokument ist folgendermaßen aufgebaut:
- Tags, enthalten Inhalte oder andere Tags. Ein Tag wird mit spitzen Klammern beschrieben, z.</description>
+Mehr Infos über HTML Ein HTML-Dokument ist folgendermaßen aufgebaut:</description>
     </item>
     
     <item>
@@ -97,24 +96,76 @@ Definitionslisten werden mit dem Tag &amp;lt;dl&amp;gt; umschlossen.</descriptio
     </item>
     
     <item>
-      <title>Absolute und relative Verweise</title>
-      <link>https://opencoding.de/html/absolute_relative_verweise/</link>
+      <title>CSS</title>
+      <link>https://opencoding.de/html/08_css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opencoding.de/html/absolute_relative_verweise/</guid>
-      <description>Absolute und relative Verweise An vielen Stellen unterscheidet man in Informatiksystemen zwischen absoluten Verweisen und relativen Verweisen.
-Ein absoluter Verweis gibt die volle Adresse einer Ressource an (bei einem Hyperlink die vollständige Domain und Dateipfad). Der relative Verweis gibt die Position einer Ressource relativ zur aktuellen Position (z.B. zum aktuellen Verzeichnis) an.</description>
+      <guid>https://opencoding.de/html/08_css/</guid>
+      <description>Arbeitsauftrag HTML-Code kann mit Hilfe von CSS (Cascading Style Sheets) gestaltet werden.
+Eine CSS Datei erstellen Erstelle eine neue Datei im gleichen Ordner wie deine HTML-Datei mit den Namen style.css.
+Schreibe in die Datei folgenden Text:
+b { color: red; }  Der Code gibt allen  Tags eine rote Farbe. Bevor du die Änderung sehen kannst, musst du die Datei in HTML einbinden.
+CSS-Datei im HTML-Code einbinden Dafür muss innerhalb des head-Tags folgender Code eingefügt werden.</description>
     </item>
     
     <item>
-      <title>Trennung von Layout und Inhalt</title>
-      <link>https://opencoding.de/html/layout_struktur_inhalt/</link>
+      <title>Farben</title>
+      <link>https://opencoding.de/html/09_farben/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opencoding.de/html/layout_struktur_inhalt/</guid>
-      <description>Eines der grundlegenden Prinzipien bei der Gestaltung von Texten ist die *Trennung von Struktur, Layout und Inhalt
-Dies hat folgende Vorteile:
- Du kannst den selben Text mit einem anderen Layout für unterschiedliche Medien gestalten (Buch, Handy, Bildschirme unterschiedlicher Breite) Wenn gemeinsam Texte geschrieben werden, können die Inhalte leicht von einer Person wieder zusammengefügt werden. Durch die Trennung von Layout, Struktur und Inhalt wird ein Text barrierefrei. Jemand der blind ist, kann sich deinen Text nicht anschauen, aber um Beispiel vorlesen lassen.</description>
+      <guid>https://opencoding.de/html/09_farben/</guid>
+      <description>Arbeitsauftrag  Markiere einen Text in deinem HTML-Dokument farbig. Färbe den Hintergrund eines HTML-Dokumentes farbig.  Syntax Zum Setzen von Farben kannst du die Attribute color und background-color verwenden.
+Als Wert kannst du entweder Farben mit Namen (red, green, &amp;hellip;) oder als Farbcode angeben, z.B. in der folgenden Form:
+color: black; background-color: green;  Farbcodes Farben können auch als Farbcode angegeben werden, z.B. als rgb-Wert (rgb: red, green, blue).</description>
+    </item>
+    
+    <item>
+      <title>Das Box-Modell</title>
+      <link>https://opencoding.de/html/10_boxmodell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/10_boxmodell/</guid>
+      <description>Arbeitsauftrag Erstelle mit dem Tag  einen Bereich mit Text, färbe den Hintergrund und lege Innen-und Außenabstände dieses Bereichs fest.
+Theorie: Das Boxmodell Wenn die Hintergrundfarben, Rahmen und Abstände zeichnen willst, ist es wichtig das Box-Modell von HTML / CSS zu verstehen:
+Jedes Tag wird entweder inline dargestellt oder als Block.
+Du kannst die Eigenschaft umstellen mit dem Attribut display .
+Beispiel: Ein link wird normalerweise inline im Text dargestellt.</description>
+    </item>
+    
+    <item>
+      <title>Klassen</title>
+      <link>https://opencoding.de/html/11_klassen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/11_klassen/</guid>
+      <description>Arbeitsauftrag Erstelle mehrere Tags gleicher Art. Gestalte mit Hilfe von Klassen nur einzelne Objekte dieses Tags.
+Du kannst z.B. mehrere Links erstellen und einige Links als button gestalten.
+Theorie: Klassen Klassen sind im Baupläne oder Schablonen. Die Idee ist es, CSS Code wiederzuverwenden, denn mit Hilfe von Klassen must du nicht jeden einzelnen Link einzeln formatieren.
+Beispiel: Buttons Sollen bestimmte Links als Buttons gezeigt werden, so weist man all diesen Links die Klasse button zu.</description>
+    </item>
+    
+    <item>
+      <title>Klassen</title>
+      <link>https://opencoding.de/html/12_klassen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/12_klassen/</guid>
+      <description>Arbeitsauftrag Erstelle mehrere Tags gleicher Art. Gestalte mit Hilfe von Klassen nur einzelne Objekte dieses Tags.
+Du kannst z.B. mehrere Links erstellen und einige Links als button gestalten.
+Theorie: Klassen Klassen sind im Baupläne oder Schablonen. Die Idee ist es, CSS Code wiederzuverwenden, denn mit Hilfe von Klassen must du nicht jeden einzelnen Link einzeln formatieren.
+Beispiel: Buttons Sollen bestimmte Links als Buttons gezeigt werden, so weist man all diesen Links die Klasse button zu.</description>
+    </item>
+    
+    <item>
+      <title>Links und Pseudoklassen</title>
+      <link>https://opencoding.de/html/12_links_pseudoklassen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/12_links_pseudoklassen/</guid>
+      <description>Arbeitsauftrag Erstelle einen Link und gestalte mit CSS den Link unterschiedlich je anchdem, ob dieser bereits besucht wurde oder noch nicht besucht wurde. Füge einen Hover-Effekt beim Überfahren mit der Maus hinzu.
+Theorie: Pseudoklassen Beim gestalten von Links gibt es eine Besonderheit, die man beachten muss:
+Links können verschiedene Zustände haben, je nachdem, ob diese bereits besucht wurden. Man kann diese folgendermaßen stylen:
+a:link bezeichnet einen noch nicht besuchten Link.</description>
     </item>
     
   </channel>

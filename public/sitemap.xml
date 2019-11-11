@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://opencoding.de/datenstrukturen-und-algorithmen/01_einfache_sortieralgorithmen/</loc>
+  </url>
   
   <url>
     <loc>https://opencoding.de/data-science/01_erste_schritte/</loc>
@@ -55,6 +59,10 @@
   </url>
   
   <url>
+    <loc>https://opencoding.de/datenstrukturen-und-algorithmen/02_rekursion/</loc>
+  </url>
+  
+  <url>
     <loc>https://opencoding.de/html/02_tags/</loc>
   </url>
   
@@ -80,6 +88,10 @@
   
   <url>
     <loc>https://opencoding.de/python_mit_turtle/03_schleifen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/datenstrukturen-und-algorithmen/</loc>
   </url>
   
   <url>
@@ -135,16 +147,44 @@
   </url>
   
   <url>
-    <loc>https://opencoding.de/html/absolute_relative_verweise/</loc>
+    <loc>https://opencoding.de/html/08_css/</loc>
   </url>
   
   <url>
-    <loc>https://opencoding.de/html/layout_struktur_inhalt/</loc>
+    <loc>https://opencoding.de/html/09_farben/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/10_boxmodell/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/11_klassen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/12_klassen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/html/12_links_pseudoklassen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/backup/absolute_relative_verweise/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/backup/layout_struktur_inhalt/</loc>
   </url>
   
   <url>
     <loc>https://opencoding.de/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opencoding.de/backup/</loc>
   </url>
   
   <url>

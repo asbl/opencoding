@@ -6,7 +6,7 @@ weight: 1
 
 ## Arbeitsauftrag
 
-Lege eine Datei index.html mit folgendem Inhalt an:
+Lege eine Datei index.html mit folgendem Inhalt an und schreibe zwischen `<body>` und `</body>` einen kurzen Text. Lasse dir diesen im Browser (oder im repl-Fenster anzeigen.)
 
 ```html
 <!DOCTYPE html>
