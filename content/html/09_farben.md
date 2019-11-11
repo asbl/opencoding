@@ -26,7 +26,7 @@ Farben können auch als Farbcode angegeben werden, z.B. als **rgb**-Wert (rgb: r
 
 ### Beispiel:
 
-![rgbvalue](./09_farben/1571660916244.png)
+![rgbvalue](/html/09_farben/1571660916244.png)
 
 
 Der Code **#00FF00** stellt die Farbe grün dar:
@@ -35,7 +35,7 @@ Der Code **#00FF00** stellt die Farbe grün dar:
 * Der Anteil von **grün** (als Hexadezimalzahl) beträgt FF = 255
 * Der Anteil von **blau** (als Hexadezimalzahl) beträgt 00
 
-## Farbcodes generiern:
+## Farbcodes generieren:
 
 Du kannst Farbcodes unter www.colorpicker.com generieren.
 

@@ -19,7 +19,7 @@ b {
   color: red;
 }
 ```
-Der Code gibt allen <b> Tags eine rote Farbe. Bevor du die Änderung sehen kannst, musst du die Datei in HTML einbinden.
+Der Code gibt allen **\<b\>** Tags eine rote Farbe. Bevor du die Änderung sehen kannst, musst du die Datei noch in HTML einbinden.
 
 ## CSS-Datei im HTML-Code einbinden
 
@@ -34,22 +34,23 @@ Dafür muss innerhalb des **head**-Tags folgender Code eingefügt werden.
 
 Jetzt kannst du einige deiner HTML-Tags gestalten, indem du dem HTML-Tag Eigenschaften zuweist.
 
- ```css
+```css
 a { 
     color: white;
     background-color: black;
 }
+
 b {
     color: red;
 }
- ```
+```
 
 Interessante css-Eigenschaften sind z.B. **color**, **background-color**, **height**, **width**, **max-width**, **align**, …
 
 
 ## Aufbau einer CSS-Datei
 
-![1571659829122](./aufbaucss.png)
+![1571659829122](/html/aufbaucss.png)
 
 ## Referenz
 

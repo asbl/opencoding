@@ -104,7 +104,7 @@ Definitionslisten werden mit dem Tag &amp;lt;dl&amp;gt; umschlossen.</descriptio
       <description>Arbeitsauftrag HTML-Code kann mit Hilfe von CSS (Cascading Style Sheets) gestaltet werden.
 Eine CSS Datei erstellen Erstelle eine neue Datei im gleichen Ordner wie deine HTML-Datei mit den Namen style.css.
 Schreibe in die Datei folgenden Text:
-b { color: red; }  Der Code gibt allen  Tags eine rote Farbe. Bevor du die Änderung sehen kannst, musst du die Datei in HTML einbinden.
+b { color: red; }  Der Code gibt allen &amp;lt;b&amp;gt; Tags eine rote Farbe. Bevor du die Änderung sehen kannst, musst du die Datei noch in HTML einbinden.
 CSS-Datei im HTML-Code einbinden Dafür muss innerhalb des head-Tags folgender Code eingefügt werden.</description>
     </item>
     
@@ -166,6 +166,24 @@ Beispiel: Buttons Sollen bestimmte Links als Buttons gezeigt werden, so weist ma
 Theorie: Pseudoklassen Beim gestalten von Links gibt es eine Besonderheit, die man beachten muss:
 Links können verschiedene Zustände haben, je nachdem, ob diese bereits besucht wurden. Man kann diese folgendermaßen stylen:
 a:link bezeichnet einen noch nicht besuchten Link.</description>
+    </item>
+    
+    <item>
+      <title>Wichtige Ideen und Konzepte</title>
+      <link>https://opencoding.de/html/wichtige-ideen-und-konzepte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/wichtige-ideen-und-konzepte/</guid>
+      <description> Trennung von Layout, Struktur und Inhalt Relative und Absolute Bezüge Klassen und Objekte  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://opencoding.de/html/layout_struktur_inhalt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opencoding.de/html/layout_struktur_inhalt/</guid>
+      <description></description>
     </item>
     
   </channel>

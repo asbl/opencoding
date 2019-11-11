@@ -14,7 +14,7 @@ Wenn die Hintergrundfarben, Rahmen und Abstände zeichnen willst, ist es wichtig
 
 Jedes Tag wird entweder **inline** dargestellt oder als **Block**. 
 
-![1573464658625](S:\hugo\Sites\opencoding.de\static\html\boxmodell.png)
+![1573464658625](/html/inlineblock.png)
 
 Du kannst die Eigenschaft umstellen mit dem Attribut **display** .
 
@@ -39,11 +39,11 @@ a {
 
 Dies sieht so aus:
 
-<a href="" style=”display: block; border: 1px solid black;”>Ein Link</a>
+<a href="/" style="display: block; border: 2px solid black;">Ein Link</a>
 
 ### Blöcke und Abstände
 
-Ein Block kann über Inhalt, Rahmen und Abstände definiert werden:![1573465342433](S:\hugo\Sites\opencoding.de\static\html\boxmodell.png)
+Ein Block kann über Inhalt, Rahmen und Abstände definiert werden:![1573465342433](/html/boxmodell.png)
 
 #### Margin
 
@@ -78,22 +78,3 @@ padding-right: 5px;
   ```
 
 Diese Eigenschaften funktionieren nur bei Elementen mit der Eigenschaft **display : block!**
-
-
-
-
-
-
-### Hierarchien
-
-Hierarchien:
-Oft will man mit CSS nur bestimmte Elemnte auswählen, z.B. alle Links, die sich in dem div container mit der Klasse footer befinden.
-Dies sieht in html folgendermaßen aus:
-<div class=„footer“>
-    <a …>Link wird gestylt</a>
-</div>
-<a…>Link wird nicht gestylt.</a>
-In CSS kann man dazu auch hierarchisch Elemente festlegen:
-.footer a {…} stylt alle Elemente die unterhalb der Klasse a liegen. Genauso kann man auch schreiben:
-div.footer a {} – Es werden alle Elemente gestylt die unterhalb eines Div-Elementes liegen, dass die Klasse footer besitzt.css 
-Siehe auch: https://www.w3schools.com/Css/css_combinators.asp 

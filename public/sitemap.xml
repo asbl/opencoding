@@ -171,11 +171,7 @@
   </url>
   
   <url>
-    <loc>https://opencoding.de/backup/absolute_relative_verweise/</loc>
-  </url>
-  
-  <url>
-    <loc>https://opencoding.de/backup/layout_struktur_inhalt/</loc>
+    <loc>https://opencoding.de/html/wichtige-ideen-und-konzepte/</loc>
   </url>
   
   <url>
@@ -184,7 +180,8 @@
   </url>
   
   <url>
-    <loc>https://opencoding.de/backup/</loc>
+    <loc>https://opencoding.de/html/layout_struktur_inhalt/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
