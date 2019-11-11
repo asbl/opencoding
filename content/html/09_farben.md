@@ -37,5 +37,5 @@ Der Code **#00FF00** stellt die Farbe grün dar:
 
 ## Farbcodes generieren:
 
-Du kannst Farbcodes unter www.colorpicker.com generieren.
+Du kannst Farbcodes unter http://www.colorpicker.com generieren.
 
