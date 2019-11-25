@@ -14,7 +14,7 @@ Wenn die Hintergrundfarben, Rahmen und Abstände zeichnen willst, ist es wichtig
 
 Jedes Tag wird entweder **inline** dargestellt oder als **Block**. 
 
-![1573464658625](/html/inlineblock.png)
+![Inline und Block-Elemente](/html/inlineblock.png)
 
 Du kannst die Eigenschaft umstellen mit dem Attribut **display** .
 

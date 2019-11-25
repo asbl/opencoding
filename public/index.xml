@@ -413,18 +413,6 @@ Beispiel: Buttons Sollen bestimmte Links als Buttons gezeigt werden, so weist ma
     </item>
     
     <item>
-      <title>Klassen</title>
-      <link>https://opencoding.de/html/12_klassen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opencoding.de/html/12_klassen/</guid>
-      <description>Arbeitsauftrag Erstelle mehrere Tags gleicher Art. Gestalte mit Hilfe von Klassen nur einzelne Objekte dieses Tags.
-Du kannst z.B. mehrere Links erstellen und einige Links als button gestalten.
-Theorie: Klassen Klassen sind im Baupläne oder Schablonen. Die Idee ist es, CSS Code wiederzuverwenden, denn mit Hilfe von Klassen must du nicht jeden einzelnen Link einzeln formatieren.
-Beispiel: Buttons Sollen bestimmte Links als Buttons gezeigt werden, so weist man all diesen Links die Klasse button zu.</description>
-    </item>
-    
-    <item>
       <title>Links und Pseudoklassen</title>
       <link>https://opencoding.de/html/12_links_pseudoklassen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -437,12 +425,16 @@ a:link bezeichnet einen noch nicht besuchten Link.</description>
     </item>
     
     <item>
-      <title>Wichtige Ideen und Konzepte</title>
-      <link>https://opencoding.de/html/wichtige-ideen-und-konzepte/</link>
+      <title>Flexbox</title>
+      <link>https://opencoding.de/html/13_flexbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opencoding.de/html/wichtige-ideen-und-konzepte/</guid>
-      <description> Trennung von Layout, Struktur und Inhalt Relative und Absolute Bezüge Klassen und Objekte  </description>
+      <guid>https://opencoding.de/html/13_flexbox/</guid>
+      <description>Arbeitsauftrag: Erstelle eine Webseite, bei der Elemente mit dem flexbox-Layout angeordnet werden.
+Theorie: Das Flex-Box-Modell Das Flexbox-Modell ist eine Möglichkeit, wie du Inhalte anordnen kannst, z.B. in Spalten.
+Flexbox kennt prinzipiell mit der display-Eigenschaft verwenden:
+.container { display: flex }  So kannst du die Kindelemente in dem Container platzieren:
+.container { display: flex }  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;Item 1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;Item 2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;Item 3&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  Dies sieht (wenn du den Child-Elementen noch etwas Rahmen und Abstand gibst) folgendermaßen aus:</description>
     </item>
     
     <item>
@@ -456,10 +448,10 @@ a:link bezeichnet einen noch nicht besuchten Link.</description>
     
     <item>
       <title>Konzept - Trennung von Inhalt, Struktur und Layout</title>
-      <link>https://opencoding.de/html/layout_struktur_inhalt/</link>
+      <link>https://opencoding.de/html/wichtige-ideen-und-konzepte/layout_struktur_inhalt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opencoding.de/html/layout_struktur_inhalt/</guid>
+      <guid>https://opencoding.de/html/wichtige-ideen-und-konzepte/layout_struktur_inhalt/</guid>
       <description>Warum sollte man überhaupt Inhalt, Struktur und Layout trennen? Einer der Kernideen von HTMl+CSS ist es, Inhalt, Layout und Struktur zu trennen.
 Dies hat folgende Vorteile:
  Ein Text kann unabhängig vom Ausgabemedium erstellt werden. Eine Webseite soll z.B. anders aussehen, je nachdem ob sie auf einem PC, Handy oder Tablet dargestellt werden soll.
