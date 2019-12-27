@@ -29,3 +29,9 @@ Bei abgelaufenen Kursen entferne ich die Fristen, so dass du volle Punktzahlen f
 ## Miniworldmaker
 
   * [Miniworldmaker](https://miniworldmaker.de) - Der Miniworldmaker ist ein Framework -ähnlich zu Greenfoot in Java-, mit welchem du Spiele in Miniwelten entwerfen kannst.
+
+## Materialien
+
+  * [Q1 Informatik CWS](https://cws-usingen.next-cloud.org/index.php/s/NJTMno7rBmwSAYY)
+
+  * [Q1 Informatik ARS](https://cws-usingen.next-cloud.org/index.php/s/s95yY6cFWs3sNFb)
